@@ -1,0 +1,13 @@
+/** 바벨 설정 파일 (https://babeljs.io/docs/)
+ * @babel/core : 바벨의 코어
+ * @babel/preset-env : ES6 -> ES5 트랜스파일링
+ * @babel/preset-react : 리액트 JSX -> JS 트랜스파일링
+
+ * 폴리필 : 새롭게 추가된 문법(Map, Set 등)들은 트랜스파일링으로 해결되지 않기 때문에, 별도의 폴리필이 필요하다. 따라서 babel-polyfill, babel-plugin-transform-runtime을 사용하여 해결할 수 있다.  
+ */
+
+ {
+  "include": ["src/**/*.js", "src/**/*.jsx"],  
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
+  "plugins": []
+}

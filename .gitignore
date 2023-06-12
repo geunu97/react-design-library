@@ -1,0 +1,13 @@
+/node_modules
+/build
+
+docs.md
+
+.env
+.env.test
+.env.local
+.env.development
+.env.production
+
+npm-debug.log*
+build-storybook.log*
