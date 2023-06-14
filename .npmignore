@@ -1,7 +1,8 @@
 /node_modules
-
+/.github
 /src
 
+release.config.js
 rollup.config.js
 postcss.config.js
 .babelrc
