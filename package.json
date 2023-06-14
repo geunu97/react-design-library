@@ -1,12 +1,10 @@
 {
   "name": "@geunwoo/react-design-system",
-  "version": "0.0.6",
+  "version": "0.0.5",
   "module": "./build/main.js",
   "types": "./build/index.d.ts",
   "scripts": {
-    "build": "npx rollup -c",
-    "release": "semantic-release",
-    "publish": "npm publish --access=public"
+    "build": "npx rollup -c"
   },
   "dependencies": {
     "react": "^18.2.0",
