@@ -2,9 +2,10 @@
 
 /src
 
+rollup.config.js
+postcss.config.js
 .babelrc
 tsconfig.json
-rollup.config.js
 
 .gitignore
 .npmignore
