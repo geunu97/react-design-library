@@ -1,8 +1,11 @@
 {
   "name": "@geunwoo/react-design-system",
-  "version": "0.0.5",
+  "version": "0.0.0",
   "module": "./build/main.js",
   "types": "./build/index.d.ts",
+  "engines": {
+    "node": ">= 18"
+  },
   "scripts": {
     "build": "npx rollup -c"
   },
