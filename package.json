@@ -1,6 +1,21 @@
 {
   "name": "@geunwoo/react-design-system",
+  "description": "Design System with React",
   "version": "0.0.0",
+  "homepage": "https://github.com/geunu97/react-design-system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geunu97/react-design-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/geunu97/react-design-system/issues",
+    "email": "olo90632951@gmail.com"
+  },
+  "author": {
+    "name": "geunwoo",
+    "email": "olo90632951@gmail.com"
+  },
+  "license": "MIT",
   "module": "./build/main.js",
   "types": "./build/index.d.ts",
   "engines": {
