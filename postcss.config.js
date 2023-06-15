@@ -4,7 +4,6 @@
  */
 
 module.exports = {
-  extensions: [".css", ".module.css"],
   plugins: {
     "postcss-import": {},
     "postcss-preset-env": {},

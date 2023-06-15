@@ -47,7 +47,7 @@ export default {
     resolve({ extensions }),
     peerDepsExternal(),
     terser(),
-    postcss({ config: "./postcss.config.js" }),
+    postcss({ config: "./postcss.config.js", modules: true }),
     babel({ babelrc: true }),
     typescript({ tsconfig: "tsconfig.json" }),
   ],
