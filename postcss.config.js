@@ -4,11 +4,10 @@
  */
 
 module.exports = {
+  extensions: [".css", ".module.css"],
   plugins: {
     "postcss-import": {},
     "postcss-preset-env": {},
-    "postcss-modules": {
-      generateScopedName: "[name]__[local]___[hash:base64:5]",
-    },
+    "postcss-modules": {},
   },
 };
