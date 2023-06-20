@@ -26,14 +26,11 @@ import postcss from "rollup-plugin-postcss";
 import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2";
 // import path from "path";
-// import pkg from "./package.json";
 
-const extensions = [".js", ".jsx", ".ts", ".tsx"]; // 어떤 확장자를 처리 할 지 정함
-// const root = path.resolve("./");
-
+const extensions = [".js", ".jsx", ".ts", ".tsx"];
+// process.env.BABEL_ENV = "production"; // babel-preset-react-app를 사용한다면 BABEL_ENV를 필수로 설정해야함.
 // const NODE_ENV = process.env.NODE_ENV;
 // const isDev = NODE_ENV === "development";
-process.env.BABEL_ENV = "production"; // babel-preset-react-app를 사용한다면 BABEL_ENV를 필수로 설정해야함.
 
 export default {
   input: "./src/index.ts",
@@ -47,11 +44,7 @@ export default {
     resolve({ extensions }),
     peerDepsExternal(),
     terser(),
-    postcss({ 
-      config: "./postcss.config.js",    
-      // extract: path.resolve('./build/style.css'), // CSS 파일을 별도로 추출
-      // modules: true, // CSS 모듈을 활성화 (선택사항)
-    }),
+    postcss({ config: "./postcss.config.js" }),
     babel({ babelrc: true }),
     typescript({ tsconfig: "tsconfig.json" }),
   ],
