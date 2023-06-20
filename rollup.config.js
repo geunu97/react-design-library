@@ -38,7 +38,7 @@ process.env.BABEL_ENV = "production"; // babel-preset-react-app를 사용한다�
 export default {
   input: "./src/index.ts",
   output: {
-    file: "./build/main.js",
+    file: "build/main.js",
     format: "es",
     sourcemap: true,
   },
@@ -49,7 +49,7 @@ export default {
     terser(),
     postcss({ 
       config: "./postcss.config.js",    
-      extract: true, // CSS 파일을 별도로 추출
+      // extract: path.resolve('./build/style.css'), // CSS 파일을 별도로 추출
       // modules: true, // CSS 모듈을 활성화 (선택사항)
     }),
     babel({ babelrc: true }),
