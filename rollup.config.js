@@ -1,4 +1,4 @@
-/** rollup 번들러 설정 파일
+/** rollup 번들러 설정 파일 (https://rollupjs.org/introduction/)
  * input : 진입 파일 경로, 어떤 파일부터 불러올지 정함
  *
  * output.file : 번들링된 파일 경로
@@ -47,7 +47,11 @@ export default {
     resolve({ extensions }),
     peerDepsExternal(),
     terser(),
-    postcss({ config: "./postcss.config.js" }),
+    postcss({ 
+      config: "./postcss.config.js",    
+      extract: true, // CSS 파일을 별도로 추출
+      // modules: true, // CSS 모듈을 활성화 (선택사항)
+    }),
     babel({ babelrc: true }),
     typescript({ tsconfig: "tsconfig.json" }),
   ],

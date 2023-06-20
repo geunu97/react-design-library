@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/style.css";
+import "../styles/button.css";
 
 function Button() {
-  return <div className="example">버튼입니다.</div>;
+  return <div className="button">버튼입니다.</div>;
 }
 export default Button;
