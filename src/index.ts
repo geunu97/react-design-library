@@ -1,2 +1,2 @@
-export { default as GButton } from "./components/Button";
+export { default as GButton } from "./components/atoms/Button";
 export { default as GApp } from "./components/App";
