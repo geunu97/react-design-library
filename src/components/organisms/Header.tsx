@@ -13,7 +13,7 @@ interface HeaderProps {
   onCreateAccount: () => void;
 }
 
-export const Header = ({
+const Header = ({
   user,
   onLogin,
   onLogout,
@@ -67,3 +67,5 @@ export const Header = ({
     </div>
   </header>
 );
+
+export default Header;
