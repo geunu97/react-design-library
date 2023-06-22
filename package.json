@@ -50,6 +50,7 @@
     "@types/react": "^18.2.11",
     "@types/react-dom": "^18.2.4",
     "babel-loader": "^9.1.2",
+    "chromatic": "^6.19.9",
     "postcss": "^8.4.24",
     "postcss-import": "^15.1.0",
     "postcss-preset-env": "^8.4.2",

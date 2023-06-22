@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy to NPM
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 permissions: write-all
 
 jobs:
-  design-system-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
