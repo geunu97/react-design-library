@@ -18,17 +18,16 @@
  * plugins.rollup-plugin-typescript2.tsconfig : tsconfig.json 파일 사용 (선언안해도 기본적으로 참고)
  */
 
-import babel from "rollup-plugin-babel";
 import commonjs from "rollup-plugin-commonjs";
 import resolve from "rollup-plugin-node-resolve";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import postcss from "rollup-plugin-postcss";
 import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2";
+// import babel from "rollup-plugin-babel";
 // import path from "path";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
-// process.env.BABEL_ENV = "production"; // babel-preset-react-app를 사용한다면 BABEL_ENV를 필수로 설정해야함.
 // const NODE_ENV = process.env.NODE_ENV;
 // const isDev = NODE_ENV === "development";
 
@@ -45,7 +44,7 @@ export default {
     peerDepsExternal(),
     terser(),
     postcss({ config: "./postcss.config.js" }),
-    babel({ babelrc: true }),
     typescript({ tsconfig: "tsconfig.json" }),
+    // babel({ babelrc: true }),
   ],
 };

@@ -1,5 +1,7 @@
 /node_modules
+/storybook-static
 /.github
+/.storybook
 /src
 
 docs.md
