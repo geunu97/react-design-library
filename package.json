@@ -15,6 +15,11 @@
     "name": "geunwoo",
     "email": "olo90632951@gmail.com"
   },
+  "keywords": [
+    "react",
+    "design",
+    "ui"
+  ],
   "license": "MIT",
   "module": "./build/main.js",
   "types": "./build/index.d.ts",
