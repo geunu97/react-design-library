@@ -25,11 +25,9 @@ import postcss from "rollup-plugin-postcss";
 import { terser } from "rollup-plugin-terser";
 import typescript from "rollup-plugin-typescript2";
 // import babel from "rollup-plugin-babel";
-// import path from "path";
 
 const extensions = [".js", ".jsx", ".ts", ".tsx"];
-// const NODE_ENV = process.env.NODE_ENV;
-// const isDev = NODE_ENV === "development";
+// const isDev = process.env.NODE_ENV === "development";
 
 export default {
   input: "./src/index.ts",
