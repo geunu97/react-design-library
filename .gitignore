@@ -2,8 +2,6 @@
 /build
 /storybook-static
 
-docs.md
-
 .env
 .env.test
 .env.local

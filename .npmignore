@@ -4,8 +4,6 @@
 /.storybook
 /src
 
-docs.md
-
 .browserslistrc
 release.config.js
 rollup.config.js
