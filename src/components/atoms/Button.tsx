@@ -1,8 +1,7 @@
 import React from "react";
 import "../../styles/button.css";
 
-interface ButtonProps {
-  type?: "button" | "submit";
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   color?: "primary" | "secondary" | "black" | "success" | "warning" | "danger";
   weight?: "outlined" | "inline" | "ghost";
   size?: "smallest" | "smaller" | "medium" | "larger" | "largest";
@@ -13,7 +12,6 @@ interface ButtonProps {
 }
 
 const Button = ({
-  type = "button",
   color = "primary",
   weight = "inline",
   size = "medium",
@@ -24,7 +22,6 @@ const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      type={type}
       disabled={disabled}
       className={[
         "button",
