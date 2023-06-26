@@ -77,10 +77,17 @@ export const GhostWeight: Story = {
 };
 
 /* -------------------------------- Size -------------------------------- */
-export const SmallSize: Story = {
-  name: "Size: Small",
+export const SmallestSize: Story = {
+  name: "Size: Smallest",
   args: {
-    size: "small",
+    size: "smallest",
+    label: "Button",
+  },
+};
+export const SmallerSize: Story = {
+  name: "Size: Smaller",
+  args: {
+    size: "smaller",
     label: "Button",
   },
 };
@@ -91,10 +98,17 @@ export const MediumSize: Story = {
     label: "Button",
   },
 };
-export const LargeSize: Story = {
-  name: "Size: Large",
+export const LargerSize: Story = {
+  name: "Size: Larger",
   args: {
-    size: "large",
+    size: "larger",
+    label: "Button",
+  },
+};
+export const LargestSize: Story = {
+  name: "Size: Largest",
+  args: {
+    size: "largest",
     label: "Button",
   },
 };

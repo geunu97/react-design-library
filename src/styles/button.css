@@ -7,13 +7,13 @@
   line-height: 1;
 }
 
-/* -------------------------------- 비활성화 -------------------------------- */
+/* -------------------------------- disabled -------------------------------- */
 .button:disabled {
   opacity: 0.3;
   cursor: not-allowed;
 }
 
-/* -------------------------------- 색상 ---------------------------------- */
+/* -------------------------------- color ---------------------------------- */
 .button-color--primary {
   color: #4db6ac;
   background-color: #4db6ac;
@@ -50,7 +50,7 @@
   border: 1px solid #ff3232;
 }
 
-/* -------------------------------- 버튼 스타일 -------------------------------- */
+/* -------------------------------- weight -------------------------------- */
 .button-weight--outlined {
   background-color: transparent;
 }
@@ -63,21 +63,29 @@
   border: 0;
 }
 
-/* -------------------------------- 크기 -------------------------------- */
-.button-size--small {
-  padding: 0.7rem 2rem;
-  font-size: 1rem;
+/* -------------------------------- size -------------------------------- */
+.button-size--smallest {
+  padding: 8px 15px;
+  font-size: 12px;
+}
+.button-size--smaller {
+  padding: 11px 18px;
+  font-size: 14px;
 }
 .button-size--medium {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
+  padding: 14px 22px;
+  font-size: 16px;
 }
-.button-size--large {
-  padding: 1.5rem 3rem;
-  font-size: 4rem;
+.button-size--larger {
+  padding: 17px 27px;
+  font-size: 19px;
+}
+.button-size--largest {
+  padding: 21px 34px;
+  font-size: 24px;
 }
 
-/* -------------------------------- 테두리 각도 -------------------------------- */
+/* -------------------------------- shape -------------------------------- */
 .button-shape--squre {
   border-radius: 0;
 }

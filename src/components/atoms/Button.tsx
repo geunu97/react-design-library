@@ -5,7 +5,7 @@ interface ButtonProps {
   type?: "button" | "submit";
   color?: "primary" | "secondary" | "black" | "success" | "warning" | "danger";
   weight?: "outlined" | "inline" | "ghost";
-  size?: "small" | "medium" | "large";
+  size?: "smallest" | "smaller" | "medium" | "larger" | "largest";
   shape?: "squre" | "circle";
   disabled?: boolean;
   label?: string;
@@ -16,7 +16,7 @@ const Button = ({
   type = "button",
   color = "primary",
   weight = "inline",
-  size = "small",
+  size = "medium",
   shape = "circle",
   disabled = false,
   label,
