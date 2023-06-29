@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import "../../styles/alert.css";
-import CloseIcon from "../../assets/icons/Close";
-import SuccessIcon from "../../assets/icons/Success";
-import WarningIcon from "../../assets/icons/Warning";
-import DangerIcon from "../../assets/icons/Danger";
-import InfoIcon from "../../assets/icons/Info";
-import useTimeout from "../../hooks/useTimeout";
-import NeutralIcon from "../../assets/icons/Neutral";
+import React from "react";
+import "./alert.css";
+import CloseIcon from "../../../assets/icons/Close";
+import SuccessIcon from "../../../assets/icons/Success";
+import WarningIcon from "../../../assets/icons/Warning";
+import DangerIcon from "../../../assets/icons/Danger";
+import InfoIcon from "../../../assets/icons/Info";
+import useTimeout from "../../../hooks/useTimeout";
+import NeutralIcon from "../../../assets/icons/Neutral";
 
 interface AlertProps {
   type?: "success" | "warning" | "danger" | "info" | "neutral";

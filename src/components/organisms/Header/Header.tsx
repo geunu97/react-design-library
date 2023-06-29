@@ -1,6 +1,6 @@
 import React from "react";
-import "../../styles/header.css";
-import Button from "../atoms/Button";
+import "./header.css";
+import Button from "../../atoms/Button/Button";
 
 type User = {
   name: string;
@@ -13,12 +13,7 @@ interface HeaderProps {
   onCreateAccount: () => void;
 }
 
-const Header = ({
-  user,
-  onLogin,
-  onLogout,
-  onCreateAccount,
-}: HeaderProps) => (
+const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
   <header>
     <div className="header">
       <div>

@@ -1,3 +1,3 @@
-export { default as GButton } from "./components/atoms/Button";
-export { default as GAlert } from "./components/molecules/Alert";
-export { default as GHeader } from "./components/organisms/Header";
+export { default as GButton } from "./components/atoms/Button/Button";
+export { default as GAlert } from "./components/molecules/Alert/Alert";
+export { default as GHeader } from "./components/organisms/Header/Header";
