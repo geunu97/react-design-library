@@ -28,13 +28,47 @@ $ npm install @geunwoo/react-design-system
 
 We have several examples [on the website](https://main--64945a5460facec38f6ccd6b.chromatic.com).
 
+#### Button
+
 ```jsx
 import { GButton } from "@geunwoo/react-design-system";
 
 function App() {
   return (
     <div>
-      <GButton label="click" color="primary" weight="outlined" shape="circle" />
+      <GButton
+        color="primary"
+        weight="outlined"
+        size="medium"
+        shape="circle"
+        label="Click me!"
+        disabled={false}
+        onClick={() => {}}
+      />
+    </div>
+  );
+}
+
+export default App;
+```
+
+#### Alert
+
+```jsx
+import { GAlert } from "@geunwoo/react-design-system";
+
+function App() {
+  return (
+    <div>
+      <GAlert
+        type="success"
+        shape="squre"
+        title="This is a sample title"
+        content="This is a sample description"
+        duration={5000}
+        useAlertIcon={true}
+        useCloseIcon={true}
+      />
     </div>
   );
 }
