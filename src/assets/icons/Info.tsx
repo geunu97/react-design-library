@@ -14,8 +14,8 @@ const InfoIcon = (props: InfoIconProps) => {
       viewBox="0 0 24 24"
       stroke="currentColor"
       fill="none"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <circle cx="12" cy="12" r="9"></circle>
       <path d="M12 7v6M12 16h0"></path>

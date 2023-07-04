@@ -13,7 +13,7 @@ const CloseIcon = (props: CloseIconProps) => {
       height={props.height}
       viewBox="0 0 24 24"
       stroke="currentColor"
-      stroke-width="1.5"
+      strokeWidth="1.5"
     >
       <path d="M18 6 L6 18 M6 6 L18 18"></path>
     </svg>
