@@ -1,0 +1,64 @@
+/* 초기화 */
+.loading {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.loading .loading-icon,
+.loading .loading-percentage {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------- position ---------------------------------- */
+.loading-position--inline {
+  display: inline;
+}
+.loading-position--center {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------- color ---------------------------------- */
+.loading-color--success {
+  color: rgba(16, 185, 129, 1);
+}
+.loading-color--warning {
+  color: rgba(245, 158, 11, 1);
+}
+.loading-color--danger {
+  color: rgba(239, 68, 68, 1);
+}
+.loading-color--info {
+  color: rgba(59, 130, 246, 1);
+}
+.loading-color--neutral {
+  color: rgba(170, 170, 170, 1);
+}
+.loading-color--black {
+  color: rgb(31, 31, 31);
+}
+
+/* -------------------------------- size ---------------------------------- */
+.loading-size--smallest {
+  font-size: 5px;
+}
+.loading-size--smaller {
+  font-size: 5px;
+}
+.loading-size--medium {
+  font-size: 5px;
+}
+.loading-size--larger {
+  font-size: 5px;
+}
+.loading-size--largest {
+  font-size: 6px;
+}

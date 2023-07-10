@@ -1,0 +1,52 @@
+import {
+  Meta,
+  Primary,
+  Controls,
+  Stories,
+  Story,
+  Canvas,
+} from "@storybook/blocks";
+import * as LoadingStories from "./Loading.stories";
+
+<Meta of={LoadingStories} />
+
+# Loading
+
+<Primary />
+
+## Props
+
+<Controls />
+
+{/* ## Stories */}
+
+{/* <Stories /> */}
+
+## Stories
+
+### Colors
+
+<Canvas>
+  <Story of={LoadingStories.SuccessColor} />
+  <Story of={LoadingStories.WarningColor} />
+  <Story of={LoadingStories.DangerColor} />
+  <Story of={LoadingStories.InfoColor} />
+  <Story of={LoadingStories.NeutralColor} />
+  <Story of={LoadingStories.BlackColor} />
+</Canvas>
+
+### Sizes
+
+<Canvas>
+  <Story of={LoadingStories.SmallestSize} />
+  <Story of={LoadingStories.SmallerSize} />
+  <Story of={LoadingStories.MediumSize} />
+  <Story of={LoadingStories.LargerSize} />
+  <Story of={LoadingStories.LargestSize} />
+</Canvas>
+
+### Percentage
+
+<Canvas>
+  <Story of={LoadingStories.Percentage} />
+</Canvas>
