@@ -1,8 +1,8 @@
-import type { Meta, StoryObj } from "@storybook/react";
-import Loading from "./Loading";
+import type { Meta, StoryObj } from '@storybook/react';
+import Loading from './Loading';
 
 const meta: Meta<typeof Loading> = {
-  title: "Components/Molecules/Loading",
+  title: 'Components/Molecules/Loading',
   component: Loading,
 };
 
@@ -11,77 +11,77 @@ export type Story = StoryObj<typeof Loading>;
 
 /* -------------------------------- Color -------------------------------- */
 export const SuccessColor: Story = {
-  name: "Color: Success",
+  name: 'Color: Success',
   args: {
-    color: "success",
+    color: 'success',
   },
 };
 export const WarningColor: Story = {
-  name: "Color: Warning",
+  name: 'Color: Warning',
   args: {
-    color: "warning",
+    color: 'warning',
   },
 };
 export const DangerColor: Story = {
-  name: "Color: Danger",
+  name: 'Color: Danger',
   args: {
-    color: "danger",
+    color: 'danger',
   },
 };
 export const InfoColor: Story = {
-  name: "Color: Info",
+  name: 'Color: Info',
   args: {
-    color: "info",
+    color: 'info',
   },
 };
 export const NeutralColor: Story = {
-  name: "Color: Neutral",
+  name: 'Color: Neutral',
   args: {
-    color: "neutral",
+    color: 'neutral',
   },
 };
 export const BlackColor: Story = {
-  name: "Color: Black",
+  name: 'Color: Black',
   args: {
-    color: "black",
+    color: 'black',
   },
 };
 
 /* -------------------------------- Size -------------------------------- */
 export const SmallestSize: Story = {
-  name: "Size: Smallest",
+  name: 'Size: Smallest',
   args: {
-    size: "smallest",
+    size: 'smallest',
   },
 };
 export const SmallerSize: Story = {
-  name: "Size: Smaller",
+  name: 'Size: Smaller',
   args: {
-    size: "smaller",
+    size: 'smaller',
   },
 };
 export const MediumSize: Story = {
-  name: "Size: Medium",
+  name: 'Size: Medium',
   args: {
-    size: "medium",
+    size: 'medium',
   },
 };
 export const LargerSize: Story = {
-  name: "Size: Larger",
+  name: 'Size: Larger',
   args: {
-    size: "larger",
+    size: 'larger',
   },
 };
 export const LargestSize: Story = {
-  name: "Size: Largest",
+  name: 'Size: Largest',
   args: {
-    size: "largest",
+    size: 'largest',
   },
 };
 
 /* -------------------------------- Percentage -------------------------------- */
 export const Percentage: Story = {
-  name: "Percentage : number",
+  name: 'Percentage : number',
   args: {
     percentage: 72,
   },

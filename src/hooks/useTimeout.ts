@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 const useTimeout = (duration?: number) => {
   const [isOpened, setIsOpened] = useState(true);

@@ -1,16 +1,16 @@
-import React from "react";
-import "./alert.css";
-import CloseIcon from "../../../assets/icons/Close";
-import SuccessIcon from "../../../assets/icons/Success";
-import WarningIcon from "../../../assets/icons/Warning";
-import DangerIcon from "../../../assets/icons/Danger";
-import InfoIcon from "../../../assets/icons/Info";
-import useTimeout from "../../../hooks/useTimeout";
-import NeutralIcon from "../../../assets/icons/Neutral";
+import React from 'react';
+import './alert.css';
+import CloseIcon from '../../../assets/icons/Close';
+import SuccessIcon from '../../../assets/icons/Success';
+import WarningIcon from '../../../assets/icons/Warning';
+import DangerIcon from '../../../assets/icons/Danger';
+import InfoIcon from '../../../assets/icons/Info';
+import useTimeout from '../../../hooks/useTimeout';
+import NeutralIcon from '../../../assets/icons/Neutral';
 
 interface AlertProps {
-  type?: "success" | "warning" | "danger" | "info" | "neutral";
-  shape?: "squre" | "circle";
+  type?: 'success' | 'warning' | 'danger' | 'info' | 'neutral';
+  shape?: 'squre' | 'circle';
   title: string;
   content?: string;
   duration?: number;
@@ -19,8 +19,8 @@ interface AlertProps {
 }
 
 const Alert = ({
-  type = "success",
-  shape = "squre",
+  type = 'success',
+  shape = 'squre',
   title,
   content,
   duration,
@@ -31,20 +31,14 @@ const Alert = ({
 
   if (isOpened) {
     return (
-      <div
-        className={[
-          "alert",
-          `alert-type--${type}`,
-          `alert-shape--${shape}`,
-        ].join(" ")}
-      >
+      <div className={['alert', `alert-type--${type}`, `alert-shape--${shape}`].join(' ')}>
         {useAlertIcon && (
           <div className="alert-icon">
-            {type === "success" && <SuccessIcon width="20px" height="20px" />}
-            {type === "warning" && <WarningIcon width="20px" height="20px" />}
-            {type === "danger" && <DangerIcon width="20px" height="20px" />}
-            {type === "info" && <InfoIcon width="20px" height="20px" />}
-            {type === "neutral" && <NeutralIcon width="20px" height="20px" />}
+            {type === 'success' && <SuccessIcon width="20px" height="20px" />}
+            {type === 'warning' && <WarningIcon width="20px" height="20px" />}
+            {type === 'danger' && <DangerIcon width="20px" height="20px" />}
+            {type === 'info' && <InfoIcon width="20px" height="20px" />}
+            {type === 'neutral' && <NeutralIcon width="20px" height="20px" />}
           </div>
         )}
         <div className="alert-text">
