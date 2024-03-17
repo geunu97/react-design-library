@@ -205,6 +205,7 @@ export const TitleSize: Story = {
     titleSize: '24px',
   },
 };
+
 /* -------------------------------- ContentSize -------------------------------- */
 export const ContentSize: Story = {
   name: 'ContentSize: string',
@@ -213,11 +214,21 @@ export const ContentSize: Story = {
     contentSize: '24px',
   },
 };
+
 /* -------------------------------- ButtonTextSize -------------------------------- */
 export const ButtonTextSize: Story = {
   name: 'ButtonTextSize: string',
   args: {
     ...sampleArgs,
     buttonTextSize: '18px',
+  },
+};
+
+/* -------------------------------- Width -------------------------------- */
+export const Width: Story = {
+  name: 'Width: string',
+  args: {
+    ...sampleArgs,
+    width: '600px',
   },
 };
