@@ -100,6 +100,36 @@ function Example() {
 }
 ```
 
+#### Pagination
+
+```jsx
+import { GPagination } from '@geunwoo/react-design-system';
+
+function Example() {
+  return (
+    <div>
+      <GPagination
+        page={1}
+        pageSize={10}
+        total={100}
+        onChangePage={(page: number) => {}}
+        type="danger-dark"
+        weight="inline"
+        shape="circle"
+        maxPageButtons={5}
+        prevButtonText="Prev"
+        nextButtonText="Next"
+        showPrevButtonIcon={false}
+        showNextButtonIcon={false}
+        onShowContent={(page: number, pageSize: number) => {
+          return `Page ${page} of ${pageSize}`;
+        }}
+      />
+    </div>
+  );
+}
+```
+
 #### Loading
 
 ```jsx
