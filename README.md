@@ -51,7 +51,7 @@ function Example() {
       title: "This is a sample title",
       content:"This is a sample description",
       duration: 5000,
-      showAlertIcon: true,
+      showToastIcon: true,
       showCloseIcon: true
     })
   }
