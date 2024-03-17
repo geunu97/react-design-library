@@ -50,13 +50,13 @@ import { showGToast } from '@geunwoo/react-design-system';
 function Example() {
   const onClick = () => {
     showGToast({ 
-      content: '정말 삭제하시겠습니까?',     
-      type: "danger-dark",
-      confirmButtonText: "확인",      
-      onConfirm: () => {},
-      showCancelButton: true,
-      cancelButtonText: "취소",
-      position: 'center-center',
+      type: "success",
+      shape: "squre",
+      title: "This is a sample title",
+      content:"This is a sample description",
+      duration: 5000,
+      showAlertIcon: true,
+      showCloseIcon: true
     })
   }
 
@@ -84,13 +84,13 @@ import { showGAlert } from '@geunwoo/react-design-system';
 function Example() {
   const onClick = () => {
     showGAlert({
-      type: "success",
-      shape: "squre",
-      title: "This is a sample title",
-      content:"This is a sample description",
-      duration: 5000,
-      showAlertIcon: true,
-      showCloseIcon: true
+      content: '정말 삭제하시겠습니까?',     
+      type: "danger-dark",
+      confirmButtonText: "확인",      
+      onConfirm: () => {},
+      showCancelButton: true,
+      cancelButtonText: "취소",
+      position: 'center-center',
     })
   }
 
