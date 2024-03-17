@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Loading from './index';
 
 const meta: Meta<typeof Loading> = {
-  title: 'Components/Molecules/Loading',
+  title: 'Components/Atoms/Loading',
   component: Loading,
 };
 
