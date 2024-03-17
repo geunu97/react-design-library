@@ -6,65 +6,126 @@
   bottom: 0;
   left: 0;
 }
-.gw-toast-list-wrapper {
-  /* position: absolute;
-  left: 0;
-  bottom: 0; */
+.gw-toast {
+  position: absolute;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  
+  border-radius: 10px;
+}
+.gw-toast-contentWrap {
+  padding: 20px 30px 60px;
   display: flex;
-  flex-direction: column;  
-  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.gw-toast-item-wrapper {
+.gw-toast-title {
   color: #000;
-  line-height: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
-.gw-toast-item-title {
+.gw-toast-content {
+  color: #000;
+  margin-bottom: 10px;
 }
-.gw-toast-item-content {
+.gw-toast-buttonWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;  
+}
+.gw-toast-buttonWrap > button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  font-weight: 500;
+  min-height: 40px;
+}
+.gw-toast-confirm-button {
+  color: #FFF;
+}
+.gw-toast-cancel-button {
+  background-color: #e8e9e9;
+  color: #000;
 }
 
 /* -------------------------------- position -------------------------------- */
-.gw-position--left-top {
+.gw-toast-position--left-top {
+  left: 0;
   top: 0;
-  left: 0;
-  align-items: flex-start;
 }
-.gw-position--left-center {
-  top: 50%;
+.gw-toast-position--left-center {
   left: 0;
+  top: 50%;  
   transform: translateY(-50%);
-  align-items: flex-start;
 }
-.gw-position--left-center {
-  bottom: 0;
+.gw-toast-position--left-bottom {
   left: 0;
-  align-items: flex-start;
+  bottom: 0;  
 }
-.gw-position--center-top {
+.gw-toast-position--center-top {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-.gw-position--center-center {
+.gw-toast-position--center-center {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.gw-position--center-bottom {
+.gw-toast-position--center-bottom {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 }
-.gw-position--right-top {
-  top: 0;
+.gw-toast-position--right-top {
   right: 0;
+  top: 0;  
 }
-.gw-position--right-center {
-  top: 50%;
+.gw-toast-position--right-center {
   right: 0;
+  top: 50%;  
   transform: translateY(-50%);
 }
-.gw-position--right-bottom {
-  bottom: 0;
+.gw-toast-position--right-bottom {
   right: 0;
+  bottom: 0;  
+}
+
+/* -------------------------------- type -------------------------------- */
+.gw-toast-type--success .gw-toast-confirm-button {
+  background-color: rgba(5, 150, 105, 0.1);
+  color: rgba(5, 150, 105, 1);
+}
+.gw-toast-type--success-dark .gw-toast-confirm-button {
+  background-color: #009780;
+}
+.gw-toast-type--warning .gw-toast-confirm-button {
+  background-color: rgba(217, 119, 6, 0.1);
+  color: rgb(255, 165, 62);
+}
+.gw-toast-type--warning-dark .gw-toast-confirm-button {
+  background-color: #ffa04e;
+}
+.gw-toast-type--danger .gw-toast-confirm-button {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: rgba(220, 38, 38, 1);
+}
+.gw-toast-type--danger-dark .gw-toast-confirm-button {
+  background-color: #FF2869;
+}
+.gw-toast-type--info .gw-toast-confirm-button {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: rgba(37, 99, 235, 1);
+}
+.gw-toast-type--info-dark .gw-toast-confirm-button {
+  background-color: #0D47A1;
+}
+.gw-toast-type--neutral .gw-toast-confirm-button {
+  background-color: rgba(145, 145, 145, 0.1);
+  color: rgba(145, 145, 145, 1);
+}
+.gw-toast-type--neutral-dark .gw-toast-confirm-button {
+  background-color: #000;
 }

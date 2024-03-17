@@ -1,5 +1,15 @@
 export interface ToastOptions {
-  type?: 'success' | 'warning' | 'danger' | 'info' | 'neutral';
+  type?:
+    | 'success'
+    | 'success-dark'
+    | 'warning'
+    | 'warning-dark'
+    | 'danger'
+    | 'danger-dark'
+    | 'info'
+    | 'info-dark'
+    | 'neutral'
+    | 'neutral-dark';
   position?:
     | 'left-top'
     | 'left-center'
@@ -11,26 +21,23 @@ export interface ToastOptions {
     | 'right-center'
     | 'right-bottom';
   className?: string;
-  duration?: number;
-  width?: number;
-  height?: number;
+  width?: string;
+  height?: string;
   title?: string;
   titleSize?: string;
   content?: string;
   contentSize?: string;
-  showConfirmButton?: boolean;
-  showCloseButton?: boolean;
-  showCancelButton?: boolean;
   confirmButtonText?: string;
-  closeButtonText?: string;
+  showCancelButton?: boolean;
   cancelButtonText?: string;
+  buttonTextSize?: string;
   onConfirm?: () => void;
-  onClose?: () => void;
-  onCancel?: () => void;
-  useAlertIcon?: boolean;
-  useCloseIcon?: boolean;
 }
 
 export interface ToastProviderProps {
   children: React.ReactNode;
+}
+
+export interface ToastProps extends ToastOptions {
+  onClose: () => void;
 }
