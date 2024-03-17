@@ -28,6 +28,40 @@ $ npm install @geunwoo/react-design-system
 
 We have several examples [on the website](https://main--64945a5460facec38f6ccd6b.chromatic.com).
 
+#### Toast
+
+```jsx
+/* main.tsx */
+import { GToastProvider } from "@geunwoo/react-design-system";
+
+ReactDOM.createRoot(document.getElementById('root')!).render(  
+  <GToastProvider>
+    <App />
+  </GToastProvider>            
+)
+
+/* How to use */
+import { showGToast } from '@geunwoo/react-design-system';
+
+function Example() {
+  const onClick = () => {
+    showGToast({ 
+      content: '정말 삭제하시겠습니까?',     
+      type: "danger-dark",
+      confirmButtonText: "확인",      
+      onConfirm: () => {},
+      showCancelButton: true,
+      cancelButtonText: "취소",
+      position: 'center-center',
+    })
+  }
+
+  return (          
+    <button onClick={onClick}>click me</button>    
+  )
+}
+```
+
 #### Button
 
 ```jsx
