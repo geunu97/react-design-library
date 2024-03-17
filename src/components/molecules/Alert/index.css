@@ -1,84 +1,94 @@
 /* 초기화 */
-.alert {
+.gw-alert-list {
+  position: fixed; 
+  top: 50%; 
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 999999;
+  display: flex;
+  flex-direction: column-reverse; 
+  gap: 10px;
+}
+.gw-alert {
   display: flex;
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.alert-text {
+.gw-alert-text {
   flex: 1;
   margin: 0 12px;
   font-size: 14px;
   line-height: 20px;
 }
-.alert-title {
+.gw-alert-title {
   margin: 0;
   font-weight: 500;
   margin-bottom: 8px;
 }
-.alert-content {
+.gw-alert-content {
   margin: 0;
 }
-.alert-close {
+.gw-alert-close {
   cursor: pointer;
 }
 
 /* -------------------------------- type -------------------------------- */
-.alert-type--success {
+.gw-alert-type--success {
   background-color: rgba(5, 150, 105, 0.1);
   color: rgba(5, 150, 105, 1);
 }
-.alert-type--success .alert-content {
+.gw-alert-type--success .gw-alert-content {
   color: rgba(16, 185, 129, 1);
 }
-.alert-type--success .alert-close {
+.gw-alert-type--success .gw-alert-close {
   color: rgba(16, 185, 129, 1);
 }
-.alert-type--warning {
+.gw-alert-type--warning {
   background-color: rgba(217, 119, 6, 0.1);
   color: rgba(217, 119, 6, 1);
 }
-.alert-type--warning .alert-content {
+.gw-alert-type--warning .gw-alert-content {
   color: rgba(245, 158, 11, 1);
 }
-.alert-type--warning .alert-close {
+.gw-alert-type--warning .gw-alert-close {
   color: rgba(245, 158, 11, 1);
 }
-.alert-type--danger {
+.gw-alert-type--danger {
   background-color: rgba(220, 38, 38, 0.1);
   color: rgba(220, 38, 38, 1);
 }
-.alert-type--danger .alert-content {
+.gw-alert-type--danger .gw-alert-content {
   color: rgba(239, 68, 68, 1);
 }
-.alert-type--danger .alert-close {
+.gw-alert-type--danger .gw-alert-close {
   color: rgba(239, 68, 68, 1);
 }
-.alert-type--info {
+.gw-alert-type--info {
   background-color: rgba(37, 99, 235, 0.1);
   color: rgba(37, 99, 235, 1);
 }
-.alert-type--info .alert-content {
+.gw-alert-type--info .gw-alert-content {
   color: rgba(59, 130, 246, 1);
 }
-.alert-type--info .alert-close {
+.gw-alert-type--info .gw-alert-close {
   color: rgba(59, 130, 246, 1);
 }
-.alert-type--neutral {
+.gw-alert-type--neutral {
   background-color: rgba(145, 145, 145, 0.1);
   color: rgba(145, 145, 145, 1);
 }
-.alert-type--neutral .alert-content {
+.gw-alert-type--neutral .gw-alert-content {
   color: rgba(170, 170, 170, 1);
 }
-.alert-type--neutral .alert-close {
+.gw-alert-type--neutral .gw-alert-close {
   color: rgba(170, 170, 170, 1);
 }
 
 /* -------------------------------- shape -------------------------------- */
-.alert-shape--squre {
+.gw-alert-shape--squre {
   border-radius: 6px;
   padding: 16px;
 }
-.alert-shape--circle {
+.gw-alert-shape--circle {
   border-radius: 3em;
   padding: 16px 22px;
 }

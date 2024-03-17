@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Alert from './index';
+import Alert from './Item';
 
 const meta: Meta<typeof Alert> = {
   title: 'Components/Molecules/Alert',
@@ -78,18 +78,18 @@ export const EmptyContent: Story = {
 
 /* -------------------------------- When not to use alertIcon -------------------------------- */
 export const DoNotUseAlertIcon: Story = {
-  name: 'UseAlertIcon: false',
+  name: 'showAlertIcon: false',
   args: {
     ...sampleArgs,
-    useAlertIcon: false,
+    showAlertIcon: false,
   },
 };
 
 /* -------------------------------- When not to use closeIcon -------------------------------- */
 export const DoNotUseCloseIcon: Story = {
-  name: 'UseCloseIcon: false',
+  name: 'showCloseIcon: false',
   args: {
     ...sampleArgs,
-    useCloseIcon: false,
+    showCloseIcon: false,
   },
 };
