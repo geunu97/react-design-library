@@ -147,6 +147,27 @@ function Example() {
 export default Example;
 ```
 
+#### ProgressBar
+
+```jsx
+import { GProgressBar } from "@geunwoo/react-design-system";
+
+function Example() {
+  return (
+    <div>
+      <GProgressBar
+        steps={60}
+        type="success-dark"
+        stroke="2px"
+        shape="circle"
+      />
+    </div>
+  );
+}
+
+export default Example;
+```
+
 #### Label
 
 ```jsx
