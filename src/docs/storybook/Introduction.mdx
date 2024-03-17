@@ -100,6 +100,49 @@ function Example() {
 }
 ```
 
+#### Loading
+
+```jsx
+import { GLoading } from "@geunwoo/react-design-system";
+
+function Example() {
+  return (
+    <div>
+      <GLoading
+        position="center"
+        color="success"
+        size="medium"
+        percentage={72}
+      />
+    </div>
+  );
+}
+
+export default Example;
+```
+
+#### Label
+
+```jsx
+import { GLabel } from "@geunwoo/react-design-system";
+
+function Example() {
+  return (
+    <div>
+      <GLabel
+        color="primary"
+        weight="inline"
+        size="smaller"
+        shape="circle"
+        value="Label"
+      />
+    </div>
+  );
+}
+
+export default Example;
+```
+
 #### Button
 
 ```jsx
@@ -116,27 +159,6 @@ function Example() {
         label="Click me!"
         disabled={false}
         onClick={() => {}}
-      />
-    </div>
-  );
-}
-
-export default Example;
-```
-
-#### Loading
-
-```jsx
-import { GLoading } from "@geunwoo/react-design-system";
-
-function Example() {
-  return (
-    <div>
-      <GLoading
-        position="center"
-        color="success"
-        size="medium"
-        percentage={72}
       />
     </div>
   );
