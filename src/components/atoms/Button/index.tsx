@@ -15,11 +15,11 @@ const Button = ({
     <button
       disabled={disabled}
       className={[
-        'button',
-        `button-color--${color}`,
-        `button-weight--${weight}`,
-        `button-size--${size}`,
-        `button-shape--${shape}`,
+        'gw-button',
+        `gw-button-color--${color}`,
+        `gw-button-weight--${weight}`,
+        `gw-button-size--${size}`,
+        `gw-button-shape--${shape}`,
       ].join(' ')}
       {...props}
     >

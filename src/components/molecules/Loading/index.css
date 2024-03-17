@@ -1,9 +1,9 @@
 /* 초기화 */
-.loading {
+.gw-loading {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.loading .loading-icon,
-.loading .loading-percentage {
+.gw-loading .gw-loading-icon,
+.gw-loading .gw-loading-percentage {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -11,10 +11,10 @@
 }
 
 /* -------------------------------- position ---------------------------------- */
-.loading-position--inline {
+.gw-loading-position--inline {
   display: inline;
 }
-.loading-position--center {
+.gw-loading-position--center {
   position: fixed;
   top: 0;
   right: 0;
@@ -27,38 +27,38 @@
 }
 
 /* -------------------------------- color ---------------------------------- */
-.loading-color--success {
+.gw-loading-color--success {
   color: rgba(16, 185, 129, 1);
 }
-.loading-color--warning {
+.gw-loading-color--warning {
   color: rgba(245, 158, 11, 1);
 }
-.loading-color--danger {
+.gw-loading-color--danger {
   color: rgba(239, 68, 68, 1);
 }
-.loading-color--info {
+.gw-loading-color--info {
   color: rgba(59, 130, 246, 1);
 }
-.loading-color--neutral {
+.gw-loading-color--neutral {
   color: rgba(170, 170, 170, 1);
 }
-.loading-color--black {
+.gw-loading-color--black {
   color: rgb(31, 31, 31);
 }
 
 /* -------------------------------- size ---------------------------------- */
-.loading-size--smallest {
+.gw-loading-size--smallest {
   font-size: 5px;
 }
-.loading-size--smaller {
+.gw-loading-size--smaller {
   font-size: 5px;
 }
-.loading-size--medium {
+.gw-loading-size--medium {
   font-size: 5px;
 }
-.loading-size--larger {
+.gw-loading-size--larger {
   font-size: 5px;
 }
-.loading-size--largest {
+.gw-loading-size--largest {
   font-size: 6px;
 }

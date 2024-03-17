@@ -14,14 +14,17 @@ const Loading = ({ position = 'inline', color = 'success', size = 'medium', perc
 
   return (
     <div
-      className={['loading', `loading-position--${position}`, `loading-color--${color}`, `loading-size--${size}`].join(
-        ' ',
-      )}
+      className={[
+        'gw-loading',
+        `gw-loading-position--${position}`,
+        `gw-loading-color--${color}`,
+        `gw-loading-size--${size}`,
+      ].join(' ')}
     >
-      <div className="loading-icon">
+      <div className="gw-loading-icon">
         <SpinnerIcon width={spinnerIconSizes[size]} height={spinnerIconSizes[size]} />
       </div>
-      {percentage && <p className="loading-percentage">{percentage}%</p>}
+      {percentage && <p className="gw-loading-percentage">{percentage}%</p>}
     </div>
   );
 };

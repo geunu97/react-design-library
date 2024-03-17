@@ -29,40 +29,43 @@ const Alert = ({
   const cancelButtonStyle = { borderRadius: '0px 0px 10px 0px', fontSize: buttonTextSize };
 
   return (
-    <div
-      className={[
-        'gw-alert',
-        `gw-alert-position--${position}`,
-        `gw-alert-type--${type}`,
-        `${className ? className : ''}`,
-      ].join(' ')}
-      style={wrapperStyle}
-    >
-      <div className="gw-alert-contentWrap">
-        <div className="gw-alert-title" style={titleStyle}>
-          {title}
+    <div className="gw-alert-container">
+      <div
+        className={[
+          'gw-alert',
+          `gw-alert-position--${position}`,
+          `gw-alert-type--${type}`,
+          `${className ? className : ''}`,
+        ].join(' ')}
+        style={wrapperStyle}
+      >
+        <div className="gw-alert-contentWrap">
+          <div className="gw-alert-title" style={titleStyle}>
+            {title}
+          </div>
+          <div className="gw-alert-content" style={contentStyle}>
+            {content}
+          </div>
         </div>
-        <div className="gw-alert-content" style={contentStyle}>
-          {content}
-        </div>
-      </div>
-      <div className="gw-alert-buttonWrap">
-        <button
-          className="gw-alert-confirm-button"
-          style={confirmButtonStyle}
-          onClick={() => {
-            onConfirm && onConfirm();
-            onClose();
-          }}
-        >
-          {confirmButtonText}
-        </button>
-        {showCancelButton && (
-          <button className="gw-alert-cancel-button" style={cancelButtonStyle} onClick={onClose}>
-            {cancelButtonText}
+        <div className="gw-alert-buttonWrap">
+          <button
+            className="gw-alert-confirm-button"
+            style={confirmButtonStyle}
+            onClick={() => {
+              onConfirm && onConfirm();
+              onClose();
+            }}
+          >
+            {confirmButtonText}
           </button>
-        )}
+          {showCancelButton && (
+            <button className="gw-alert-cancel-button" style={cancelButtonStyle} onClick={onClose}>
+              {cancelButtonText}
+            </button>
+          )}
+        </div>
       </div>
+      <div className="gw-alert-dimmed" onClick={onClose} />
     </div>
   );
 };

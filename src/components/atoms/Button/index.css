@@ -1,5 +1,5 @@
 /* 초기화 */
-.button {
+.gw-button {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   cursor: pointer;
@@ -8,87 +8,87 @@
 }
 
 /* -------------------------------- disabled -------------------------------- */
-.button:disabled {
+.gw-button:disabled {
   opacity: 0.3;
   cursor: not-allowed;
 }
 
 /* -------------------------------- color ---------------------------------- */
-.button-color--primary {
+.gw-button-color--primary {
   color: #4db6ac;
   background-color: #4db6ac;
   border: 1px solid #4db6ac;
 }
-.button-color--secondary {
+.gw-button-color--secondary {
   color: #dbdbdb;
   background-color: #dbdbdb;
   border: 1px solid #dbdbdb;
 }
-.button-color--black {
+.gw-button-color--black {
   color: black;
   background-color: black;
   border: 1px solid black;
 }
-.button-color--white {
+.gw-button-color--white {
   color: white;
   background-color: white;
   border: 1px solid white;
 }
-.button-color--success {
+.gw-button-color--success {
   color: #7cbb3f;
   background-color: #7cbb3f;
   border: 1px solid #7cbb3f;
 }
-.button-color--warning {
+.gw-button-color--warning {
   color: #ff8e0d;
   background-color: #ff8e0d;
   border: 1px solid #ff8e0d;
 }
-.button-color--danger {
+.gw-button-color--danger {
   color: #ff3232;
   background-color: #ff3232;
   border: 1px solid #ff3232;
 }
 
 /* -------------------------------- weight -------------------------------- */
-.button-weight--outlined {
+.gw-button-weight--outlined {
   background-color: transparent;
 }
-.button-weight--inline {
+.gw-button-weight--inline {
   color: white;
   border: 0;
 }
-.button-weight--ghost {
+.gw-button-weight--ghost {
   background-color: transparent;
   border: 0;
 }
 
 /* -------------------------------- size -------------------------------- */
-.button-size--smallest {
+.gw-button-size--smallest {
   padding: 8px 15px;
   font-size: 12px;
 }
-.button-size--smaller {
+.gw-button-size--smaller {
   padding: 11px 18px;
   font-size: 14px;
 }
-.button-size--medium {
+.gw-button-size--medium {
   padding: 14px 22px;
   font-size: 16px;
 }
-.button-size--larger {
+.gw-button-size--larger {
   padding: 17px 27px;
   font-size: 19px;
 }
-.button-size--largest {
+.gw-button-size--largest {
   padding: 21px 34px;
   font-size: 24px;
 }
 
 /* -------------------------------- shape -------------------------------- */
-.button-shape--squre {
+.gw-button-shape--squre {
   border-radius: 0;
 }
-.button-shape--circle {
+.gw-button-shape--circle {
   border-radius: 3em;
 }
