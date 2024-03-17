@@ -1,5 +1,5 @@
 import React from 'react';
-import './loading.css';
+import './index.css';
 import SpinnerIcon from '../../../assets/icons/Spinner';
 import { LoadingProps } from './type';
 

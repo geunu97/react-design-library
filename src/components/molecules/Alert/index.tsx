@@ -1,5 +1,5 @@
 import React from 'react';
-import './alert.css';
+import './index.css';
 import CloseIcon from '../../../assets/icons/Close';
 import SuccessIcon from '../../../assets/icons/Success';
 import WarningIcon from '../../../assets/icons/Warning';

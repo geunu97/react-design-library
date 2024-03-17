@@ -1,6 +1,6 @@
 import React from 'react';
 import { ToastProps } from './type';
-import './toast.css';
+import './index.css';
 
 const Toast = ({
   type = 'info-dark',

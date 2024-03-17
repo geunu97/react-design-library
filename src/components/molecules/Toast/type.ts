@@ -34,10 +34,6 @@ export interface ToastOptions {
   onConfirm?: () => void;
 }
 
-export interface ToastProviderProps {
-  children: React.ReactNode;
-}
-
 export interface ToastProps extends ToastOptions {
   onClose: () => void;
 }

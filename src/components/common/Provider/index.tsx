@@ -1,9 +1,10 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { ToastOptions, ToastProviderProps } from './type';
-import Toast from './Toast';
-import './toast.css';
+import { ProviderProps } from './type';
+import { ToastOptions } from '../../molecules/Toast/type';
+import Toast from '../../molecules/Toast';
+import './index.css';
 
-const ToastProvider = ({ children }: ToastProviderProps) => {
+const Provider = ({ children }: ProviderProps) => {
   const [toast, setToast] = useState<ToastOptions | null>(null);
 
   useEffect(() => {
@@ -21,11 +22,11 @@ const ToastProvider = ({ children }: ToastProviderProps) => {
   };
 
   return (
-    <div className="gw-toast-provider">
+    <div className="gw-provider">
       {children}
       {toast && <Toast onClose={onClose} {...toast} />}
     </div>
   );
 };
 
-export default ToastProvider;
+export default Provider;
