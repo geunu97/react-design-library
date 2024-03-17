@@ -1,13 +1,7 @@
 import React from 'react';
 import './loading.css';
 import SpinnerIcon from '../../../assets/icons/Spinner';
-
-interface LoadingProps {
-  position?: 'inline' | 'center';
-  color?: 'success' | 'warning' | 'danger' | 'info' | 'neutral' | 'black';
-  size?: 'smallest' | 'smaller' | 'medium' | 'larger' | 'largest';
-  percentage?: number;
-}
+import { LoadingProps } from './type';
 
 const Loading = ({ position = 'inline', color = 'success', size = 'medium', percentage }: LoadingProps) => {
   const spinnerIconSizes = {

@@ -1,15 +1,6 @@
 import React from 'react';
 import './button.css';
-
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  color?: 'primary' | 'secondary' | 'black' | 'success' | 'warning' | 'danger';
-  weight?: 'outlined' | 'inline' | 'ghost';
-  size?: 'smallest' | 'smaller' | 'medium' | 'larger' | 'largest';
-  shape?: 'squre' | 'circle';
-  disabled?: boolean;
-  label?: string;
-  onClick?: () => void;
-}
+import { ButtonProps } from './type';
 
 const Button = ({
   color = 'primary',

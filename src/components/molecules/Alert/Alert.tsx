@@ -7,16 +7,7 @@ import DangerIcon from '../../../assets/icons/Danger';
 import InfoIcon from '../../../assets/icons/Info';
 import useTimeout from '../../../hooks/useTimeout';
 import NeutralIcon from '../../../assets/icons/Neutral';
-
-interface AlertProps {
-  type?: 'success' | 'warning' | 'danger' | 'info' | 'neutral';
-  shape?: 'squre' | 'circle';
-  title: string;
-  content?: string;
-  duration?: number;
-  useAlertIcon?: boolean;
-  useCloseIcon?: boolean;
-}
+import { AlertProps } from './type';
 
 const Alert = ({
   type = 'success',
