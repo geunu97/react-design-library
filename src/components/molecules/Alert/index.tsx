@@ -9,13 +9,13 @@ const Alert = ({
   width = 'auto',
   height = 'auto',
   title = '',
-  titleSize = '18px',
+  titleSize = '20px',
   content = '',
   contentSize = '16px',
   confirmButtonText = '확인',
   showCancelButton = false,
   cancelButtonText = '취소',
-  buttonTextSize = '15px',
+  buttonTextSize = '16px',
   onConfirm,
   onClose,
 }: AlertProps) => {
@@ -57,7 +57,6 @@ const Alert = ({
         >
           {confirmButtonText}
         </button>
-
         {showCancelButton && (
           <button className="gw-alert-cancel-button" style={cancelButtonStyle} onClick={onClose}>
             {cancelButtonText}
