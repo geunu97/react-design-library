@@ -1,6 +1,6 @@
 import React from 'react';
-import './Toast.css';
 import { ToastOptions } from './type';
+import './toast.css';
 
 const Toast = ({ position = 'right-bottom', className, width, height, title, titleSize, content, contentSize }: ToastOptions) => {
   const style = {

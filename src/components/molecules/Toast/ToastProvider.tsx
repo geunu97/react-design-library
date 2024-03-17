@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import Toast from './Toast';
 import { ToastOptions, ToastProviderProps } from './type';
+import Toast from './Toast';
+import './toast.css';
 
 const ToastProvider = ({ children }: ToastProviderProps) => {
   const [toastList, setToastList] = useState<ToastOptions[]>([]);
