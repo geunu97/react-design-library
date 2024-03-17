@@ -1,0 +1,97 @@
+/* 초기화 */
+.gw-pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.gw-pagination button {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+.gw-pagination-prevbutton, .gw-pagination-nextbutton {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.gw-pagination-prevbutton:disabled, .gw-pagination-nextbutton:disabled {
+  opacity: 0.5;
+}
+.gw-pagination-prevbutton-text, .gw-pagination-nextbutton-text {
+  font-size: 14px;
+}
+.gw-pagination-showcontent {
+  margin: 0 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.gw-pagination-pagebuttons {
+  margin: 0 10px;
+  display: flex;
+  gap: 10px;
+}
+.gw-pagination-pagebutton.active {
+  font-weight: 700;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------------- type -------------------------------- */
+.gw-pagination-type--success .gw-pagination-pagebutton.active {
+  background-color: rgba(5, 150, 105, 0.1);
+  color: rgba(5, 150, 105, 0.1);
+}
+.gw-pagination-type--success-dark .gw-pagination-pagebutton.active {
+  background-color: #009780;
+  color: #009780;
+}
+.gw-pagination-type--warning .gw-pagination-pagebutton.active {
+  background-color: rgba(217, 119, 6, 0.1);
+  color: rgba(217, 119, 6, 0.1);
+}
+.gw-pagination-type--warning-dark .gw-pagination-pagebutton.active {
+  background-color: #ffa04e;
+  color: #ffa04e;
+}
+.gw-pagination-type--danger .gw-pagination-pagebutton.active {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: rgba(220, 38, 38, 0.1);
+}
+.gw-pagination-type--danger-dark .gw-pagination-pagebutton.active {
+  background-color: #FF2869;
+  color: #FF2869;
+}
+.gw-pagination-type--info .gw-pagination-pagebutton.active {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: rgba(37, 99, 235, 0.1);
+}
+.gw-pagination-type--info-dark .gw-pagination-pagebutton.active {
+  background-color: #0D47A1;
+  color: #0D47A1;
+}
+.gw-pagination-type--neutral-dark .gw-pagination-pagebutton.active {
+  background-color: #000;
+  color: #000;
+}
+
+/* -------------------------------- weight -------------------------------- */
+.gw-pagination-weight--ghost .gw-pagination-pagebutton.active {
+  background-color: inherit;
+  font-size: 16px;
+}
+.gw-pagination-weight--inline .gw-pagination-pagebutton.active {
+  color: white;
+}
+
+/* -------------------------------- shape -------------------------------- */
+.gw-pagination-shape--square .gw-pagination-pagebutton.active {
+  border-radius: 0;
+}
+.gw-pagination-shape--circle .gw-pagination-pagebutton.active {
+  border-radius: 3em;
+}
