@@ -2,7 +2,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 import Toast from './Toast';
 import { ToastOptions, ToastProviderProps } from './type';
 
-export const ToastProvider = ({ children }: ToastProviderProps) => {
+const ToastProvider = ({ children }: ToastProviderProps) => {
   const [toastList, setToastList] = useState<ToastOptions[]>([]);
 
   const showToast = useCallback((options: ToastOptions) => {
@@ -39,3 +39,5 @@ export const ToastProvider = ({ children }: ToastProviderProps) => {
     </div>
   );
 };
+
+export default ToastProvider;
