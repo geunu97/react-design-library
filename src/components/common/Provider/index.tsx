@@ -33,10 +33,10 @@ const Provider = ({ children }: ProviderProps) => {
     };
 
     window.addEventListener('gw-event-show-alert', handleShowAlert as EventListener);
-    window.addEventListener('gw-event-show-toast', handleShowToast as EventListener);    
+    window.addEventListener('gw-event-show-toast', handleShowToast as EventListener);
     return () => {
       window.removeEventListener('gw-event-show-alert', handleShowAlert as EventListener);
-      window.removeEventListener('gw-event-show-toast', handleShowToast as EventListener);      
+      window.removeEventListener('gw-event-show-toast', handleShowToast as EventListener);
     };
   }, []);
 
