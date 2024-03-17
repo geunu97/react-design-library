@@ -1,58 +1,58 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ProviderProps } from './type';
 import { ToastOptions } from '../../molecules/Toast/type';
-import Toast from '../../molecules/Toast';
-import './index.css';
 import { AlertOptions } from '../../molecules/Alert/type';
-import AlertList from '../../molecules/Alert/List';
+import Alert from '../../molecules/Alert';
+import ToastList from '../../molecules/Toast/List';
+import './index.css';
 
 const Provider = ({ children }: ProviderProps) => {
-  const [toast, setToast] = useState<ToastOptions | null>(null);
-  const [alertList, setAlertList] = useState<AlertOptions[]>([]);
+  const [alert, setAlert] = useState<AlertOptions | null>(null);
+  const [toastList, setToastList] = useState<ToastOptions[]>([]);
 
   useEffect(() => {
-    const handleShowToast = (event: CustomEvent<ToastOptions>) => {
-      setToast(event.detail);
-    };
     const handleShowAlert = (event: CustomEvent<AlertOptions>) => {
-      setAlertList((currentAlertList) => {
-        const newAlertList = [...currentAlertList, event.detail].slice(-10); // alertList를 최대 10개까지만 유지
-        // 각 alert에 대해 duration 설정
+      setAlert(event.detail);
+    };
+    const handleShowToast = (event: CustomEvent<ToastOptions>) => {
+      setToastList((currentToastList) => {
+        const newToastList = [...currentToastList, event.detail].slice(-10); // toastList를 최대 10개까지만 유지
+        // 각 toast 대해 duration 설정
         if (event.detail.duration) {
           setTimeout(() => {
-            setAlertList((current) => current.filter((alert) => alert !== event.detail));
+            setToastList((current) => current.filter((alert) => alert !== event.detail));
           }, event.detail.duration);
         } else {
-          // 기본적으로 3초 후에 alert 제거
+          // 기본적으로 3초 후에 toast 제거
           setTimeout(() => {
-            setAlertList((current) => current.filter((alert) => alert !== event.detail));
+            setToastList((current) => current.filter((alert) => alert !== event.detail));
           }, 3000);
         }
-        return newAlertList;
+        return newToastList;
       });
     };
 
-    window.addEventListener('gw-event-show-toast', handleShowToast as EventListener);
     window.addEventListener('gw-event-show-alert', handleShowAlert as EventListener);
+    window.addEventListener('gw-event-show-toast', handleShowToast as EventListener);    
     return () => {
-      window.removeEventListener('gw-event-show-toast', handleShowToast as EventListener);
       window.removeEventListener('gw-event-show-alert', handleShowAlert as EventListener);
+      window.removeEventListener('gw-event-show-toast', handleShowToast as EventListener);      
     };
   }, []);
 
-  const onCloseToast = () => {
-    setToast(null);
+  const onCloseAlert = () => {
+    setAlert(null);
   };
 
-  const onCloseAlert = (index: number) => {
-    setAlertList((currentAlertList) => currentAlertList.filter((_, i) => i !== index));
+  const onCloseToast = (index: number) => {
+    setToastList((currentToastList) => currentToastList.filter((_, i) => i !== index));
   };
 
   return (
     <div className="gw-provider">
       {children}
-      {toast && <Toast onClose={onCloseToast} {...toast} />}
-      {alertList?.length > 0 && <AlertList onClose={onCloseAlert} alertList={alertList} />}
+      {alert && <Alert onClose={onCloseAlert} {...alert} />}
+      {toastList?.length > 0 && <ToastList onClose={onCloseToast} toastList={toastList} />}
     </div>
   );
 };

@@ -1,94 +1,126 @@
 /* 초기화 */
-.gw-alert-list {
-  position: fixed; 
+.gw-alert {
+  position: absolute;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);  
+  border-radius: 10px;  
+  z-index: 999999;
+}
+.gw-alert-contentWrap {
+  padding: 30px 30px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.gw-alert-title {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 15px;  
+}
+.gw-alert-content {
+  color: #000;
+  margin-bottom: 10px;    
+}
+.gw-alert-buttonWrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.gw-alert-buttonWrap > button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  flex: 1;
+  font-weight: 500;
+  min-height: 40px;
+}
+.gw-alert-confirm-button {
+  color: #FFF;
+}
+.gw-alert-cancel-button {
+  background-color: #e8e9e9;
+  color: #000;
+}
+
+/* -------------------------------- position -------------------------------- */
+.gw-alert-position--left-top {
+  left: 0;
+  top: 0;
+}
+.gw-alert-position--left-center {
+  left: 0;
+  top: 50%;  
+  transform: translateY(-50%);
+}
+.gw-alert-position--left-bottom {
+  left: 0;
+  bottom: 0;  
+}
+.gw-alert-position--center-top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gw-alert-position--center-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gw-alert-position--center-bottom {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999999;
-  display: flex;
-  flex-direction: column-reverse; 
-  gap: 10px;
 }
-.gw-alert {
-  display: flex;
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.gw-alert-position--right-top {
+  right: 0;
+  top: 0;  
 }
-.gw-alert-text {
-  flex: 1;
-  margin: 0 12px;
-  font-size: 14px;
-  line-height: 20px;
+.gw-alert-position--right-center {
+  right: 0;
+  top: 50%;  
+  transform: translateY(-50%);
 }
-.gw-alert-title {
-  margin: 0;
-  font-weight: 500;
-  margin-bottom: 8px;
-}
-.gw-alert-content {
-  margin: 0;
-}
-.gw-alert-close {
-  cursor: pointer;
+.gw-alert-position--right-bottom {
+  right: 0;
+  bottom: 0;  
 }
 
 /* -------------------------------- type -------------------------------- */
-.gw-alert-type--success {
+.gw-alert-type--success .gw-alert-confirm-button {
   background-color: rgba(5, 150, 105, 0.1);
   color: rgba(5, 150, 105, 1);
 }
-.gw-alert-type--success .gw-alert-content {
-  color: rgba(16, 185, 129, 1);
+.gw-alert-type--success-dark .gw-alert-confirm-button {
+  background-color: #009780;
 }
-.gw-alert-type--success .gw-alert-close {
-  color: rgba(16, 185, 129, 1);
-}
-.gw-alert-type--warning {
+.gw-alert-type--warning .gw-alert-confirm-button {
   background-color: rgba(217, 119, 6, 0.1);
-  color: rgba(217, 119, 6, 1);
+  color: rgb(255, 165, 62);
 }
-.gw-alert-type--warning .gw-alert-content {
-  color: rgba(245, 158, 11, 1);
+.gw-alert-type--warning-dark .gw-alert-confirm-button {
+  background-color: #ffa04e;
 }
-.gw-alert-type--warning .gw-alert-close {
-  color: rgba(245, 158, 11, 1);
-}
-.gw-alert-type--danger {
+.gw-alert-type--danger .gw-alert-confirm-button {
   background-color: rgba(220, 38, 38, 0.1);
   color: rgba(220, 38, 38, 1);
 }
-.gw-alert-type--danger .gw-alert-content {
-  color: rgba(239, 68, 68, 1);
+.gw-alert-type--danger-dark .gw-alert-confirm-button {
+  background-color: #FF2869;
 }
-.gw-alert-type--danger .gw-alert-close {
-  color: rgba(239, 68, 68, 1);
-}
-.gw-alert-type--info {
+.gw-alert-type--info .gw-alert-confirm-button {
   background-color: rgba(37, 99, 235, 0.1);
   color: rgba(37, 99, 235, 1);
 }
-.gw-alert-type--info .gw-alert-content {
-  color: rgba(59, 130, 246, 1);
+.gw-alert-type--info-dark .gw-alert-confirm-button {
+  background-color: #0D47A1;
 }
-.gw-alert-type--info .gw-alert-close {
-  color: rgba(59, 130, 246, 1);
-}
-.gw-alert-type--neutral {
+.gw-alert-type--neutral .gw-alert-confirm-button {
   background-color: rgba(145, 145, 145, 0.1);
   color: rgba(145, 145, 145, 1);
 }
-.gw-alert-type--neutral .gw-alert-content {
-  color: rgba(170, 170, 170, 1);
-}
-.gw-alert-type--neutral .gw-alert-close {
-  color: rgba(170, 170, 170, 1);
-}
-
-/* -------------------------------- shape -------------------------------- */
-.gw-alert-shape--squre {
-  border-radius: 6px;
-  padding: 16px;
-}
-.gw-alert-shape--circle {
-  border-radius: 3em;
-  padding: 16px 22px;
+.gw-alert-type--neutral-dark .gw-alert-confirm-button {
+  background-color: #000;
 }

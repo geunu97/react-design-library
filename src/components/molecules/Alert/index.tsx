@@ -1,8 +1,8 @@
 import React from 'react';
-import { ToastProps } from './type';
+import { AlertProps } from './type';
 import './index.css';
 
-const Toast = ({
+const Alert = ({
   type = 'info-dark',
   position = 'center-center',
   className,
@@ -18,7 +18,7 @@ const Toast = ({
   buttonTextSize = '15px',
   onConfirm,
   onClose,
-}: ToastProps) => {
+}: AlertProps) => {
   const wrapperStyle = { width, height };
   const titleStyle = { fontSize: titleSize };
   const contentStyle = { fontSize: contentSize };
@@ -31,24 +31,24 @@ const Toast = ({
   return (
     <div
       className={[
-        'gw-toast',
-        `gw-toast-position--${position}`,
-        `gw-toast-type--${type}`,
+        'gw-alert',
+        `gw-alert-position--${position}`,
+        `gw-alert-type--${type}`,
         `${className ? className : ''}`,
       ].join(' ')}
       style={wrapperStyle}
     >
-      <div className="gw-toast-contentWrap">
-        <div className="gw-toast-title" style={titleStyle}>
+      <div className="gw-alert-contentWrap">
+        <div className="gw-alert-title" style={titleStyle}>
           {title}
         </div>
-        <div className="gw-toast-content" style={contentStyle}>
+        <div className="gw-alert-content" style={contentStyle}>
           {content}
         </div>
       </div>
-      <div className="gw-toast-buttonWrap">
+      <div className="gw-alert-buttonWrap">
         <button
-          className="gw-toast-confirm-button"
+          className="gw-alert-confirm-button"
           style={confirmButtonStyle}
           onClick={() => {
             onConfirm && onConfirm();
@@ -59,7 +59,7 @@ const Toast = ({
         </button>
 
         {showCancelButton && (
-          <button className="gw-toast-cancel-button" style={cancelButtonStyle} onClick={onClose}>
+          <button className="gw-alert-cancel-button" style={cancelButtonStyle} onClick={onClose}>
             {cancelButtonText}
           </button>
         )}
@@ -68,4 +68,4 @@ const Toast = ({
   );
 };
 
-export default Toast;
+export default Alert;

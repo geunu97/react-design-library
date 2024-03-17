@@ -5,23 +5,23 @@ import WarningIcon from '../../../assets/icons/Warning';
 import DangerIcon from '../../../assets/icons/Danger';
 import InfoIcon from '../../../assets/icons/Info';
 import NeutralIcon from '../../../assets/icons/Neutral';
-import { AlertItemProps } from './type';
+import { ToastItemProps } from './type';
 import './index.css';
 
-const AlertItem = ({
+const ToastItem = ({
   type = 'success',
   shape = 'squre',
   title,
   content,
-  showAlertIcon = true,
+  showToastIcon = true,
   showCloseIcon = true,
   index,
   onClose,
-}: AlertItemProps) => {
+}: ToastItemProps) => {
   return (
-    <div className={['gw-alert', `gw-alert-type--${type}`, `gw-alert-shape--${shape}`].join(' ')}>
-      {showAlertIcon && (
-        <div className="gw-alert-icon">
+    <div className={['gw-toast', `gw-toast-type--${type}`, `gw-toast-shape--${shape}`].join(' ')}>
+      {showToastIcon && (
+        <div className="gw-toast-icon">
           {type === 'success' && <SuccessIcon width="20px" height="20px" />}
           {type === 'warning' && <WarningIcon width="20px" height="20px" />}
           {type === 'danger' && <DangerIcon width="20px" height="20px" />}
@@ -29,12 +29,12 @@ const AlertItem = ({
           {type === 'neutral' && <NeutralIcon width="20px" height="20px" />}
         </div>
       )}
-      <div className="gw-alert-text">
-        <p className="gw-alert-title">{title}</p>
-        <p className="gw-alert-content">{content}</p>
+      <div className="gw-toast-text">
+        <p className="gw-toast-title">{title}</p>
+        <p className="gw-toast-content">{content}</p>
       </div>
       {showCloseIcon && (
-        <div className="gw-alert-close" onClick={() => onClose(index)}>
+        <div className="gw-toast-close" onClick={() => onClose(index)}>
           <CloseIcon width="24px" height="24px" />
         </div>
       )}
@@ -42,4 +42,4 @@ const AlertItem = ({
   );
 };
 
-export default AlertItem;
+export default ToastItem;

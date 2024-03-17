@@ -1,39 +1,19 @@
 export interface ToastOptions {
-  type?:
-    | 'success'
-    | 'success-dark'
-    | 'warning'
-    | 'warning-dark'
-    | 'danger'
-    | 'danger-dark'
-    | 'info'
-    | 'info-dark'
-    | 'neutral'
-    | 'neutral-dark';
-  position?:
-    | 'left-top'
-    | 'left-center'
-    | 'left-bottom'
-    | 'center-top'
-    | 'center-center'
-    | 'center-bottom'
-    | 'right-top'
-    | 'right-center'
-    | 'right-bottom';
-  className?: string;
-  width?: string;
-  height?: string;
-  title?: string;
-  titleSize?: string;
+  type?: 'success' | 'warning' | 'danger' | 'info' | 'neutral';
+  shape?: 'squre' | 'circle';
+  title: string;
   content?: string;
-  contentSize?: string;
-  confirmButtonText?: string;
-  showCancelButton?: boolean;
-  cancelButtonText?: string;
-  buttonTextSize?: string;
-  onConfirm?: () => void;
+  duration?: number;
+  showToastIcon?: boolean;
+  showCloseIcon?: boolean;
 }
 
-export interface ToastProps extends ToastOptions {
-  onClose: () => void;
+export interface ToastListProps {
+  toastList: ToastOptions[];
+  onClose: (index: number) => void;
+}
+
+export interface ToastItemProps extends ToastOptions {
+  index: number;
+  onClose: (index: number) => void;
 }
