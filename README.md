@@ -32,12 +32,12 @@ We have several examples [on the website](https://main--64945a5460facec38f6ccd6b
 
 ```jsx
 /* main.tsx */
-import { GToastProvider } from "@geunwoo/react-design-system";
+import { GProvider } from "@geunwoo/react-design-system";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(  
-  <GToastProvider>
+  <GProvider>
     <App />
-  </GToastProvider>            
+  </GProvider>            
 )
 
 /* How to use */
@@ -57,7 +57,41 @@ function Example() {
   }
 
   return (          
-    <button onClick={onClick}>click me</button>    
+    <button onClick={onClick}>Click me!</button>
+  )
+}
+```
+
+#### Alert
+
+```jsx
+/* main.tsx */
+import { GProvider } from "@geunwoo/react-design-system";
+
+ReactDOM.createRoot(document.getElementById('root')!).render(  
+  <GProvider>
+    <App />
+  </GProvider>            
+)
+
+/* How to use */
+import { showGAlert } from '@geunwoo/react-design-system';
+
+function Example() {
+  const onClick = () => {
+    showGAlert({
+      type: "success",
+      shape: "squre",
+      title: "This is a sample title",
+      content:"This is a sample description",
+      duration: 5000,
+      showAlertIcon: true,
+      showCloseIcon: true
+    })
+  }
+
+  return (          
+    <button onClick={onClick}>Click me!</button>    
   )
 }
 ```
@@ -67,7 +101,7 @@ function Example() {
 ```jsx
 import { GButton } from "@geunwoo/react-design-system";
 
-function App() {
+function Example() {
   return (
     <div>
       <GButton
@@ -83,31 +117,7 @@ function App() {
   );
 }
 
-export default App;
-```
-
-#### Alert
-
-```jsx
-import { GAlert } from "@geunwoo/react-design-system";
-
-function App() {
-  return (
-    <div>
-      <GAlert
-        type="success"
-        shape="squre"
-        title="This is a sample title"
-        content="This is a sample description"
-        duration={5000}
-        useAlertIcon={true}
-        useCloseIcon={true}
-      />
-    </div>
-  );
-}
-
-export default App;
+export default Example;
 ```
 
 #### Loading
@@ -115,7 +125,7 @@ export default App;
 ```jsx
 import { GLoading } from "@geunwoo/react-design-system";
 
-function App() {
+function Example() {
   return (
     <div>
       <GLoading
@@ -128,5 +138,5 @@ function App() {
   );
 }
 
-export default App;
+export default Example;
 ```
