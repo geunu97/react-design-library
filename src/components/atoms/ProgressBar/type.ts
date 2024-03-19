@@ -1,6 +1,21 @@
+export type ProgressBarType =
+  | 'success'
+  | 'success-dark'
+  | 'warning'
+  | 'warning-dark'
+  | 'danger'
+  | 'danger-dark'
+  | 'info'
+  | 'info-dark'
+  | 'gray'
+  | 'gray-dark'
+  | 'black'
+  | 'white';
+
 export interface ProgressBarProps {
   steps: number;
-  type?: 'success-dark' | 'warning-dark' | 'danger-dark' | 'info-dark' | 'neutral-dark';
+  type?: ProgressBarType;
+  secondaryType?: ProgressBarType;
   shape?: 'square' | 'circle';
   width?: string;
   stroke?: string;

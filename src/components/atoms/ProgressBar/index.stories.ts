@@ -14,39 +14,110 @@ const sampleArgs = {
 };
 
 /* -------------------------------- Type -------------------------------- */
+export const SuccessType: Story = {
+  name: 'Type: Success',
+  args: {
+    ...sampleArgs,
+    type: 'success',
+  },
+};
 export const SuccessDarkType: Story = {
-  name: 'Type: SuccessDark',
+  name: 'Type: Success Dark',
   args: {
     ...sampleArgs,
     type: 'success-dark',
   },
 };
+export const WarningType: Story = {
+  name: 'Type: Warning',
+  args: {
+    ...sampleArgs,
+    type: 'warning',
+  },
+};
 export const WarningDarkType: Story = {
-  name: 'Type: WarningDark',
+  name: 'Type: Warning Dark',
   args: {
     ...sampleArgs,
     type: 'warning-dark',
   },
 };
+export const DangerType: Story = {
+  name: 'Type: Danger',
+  args: {
+    ...sampleArgs,
+    type: 'danger',
+  },
+};
 export const DangerDarkType: Story = {
-  name: 'Type: DangerDark',
+  name: 'Type: Danger Dark',
   args: {
     ...sampleArgs,
     type: 'danger-dark',
   },
 };
+export const InfoType: Story = {
+  name: 'Type: Info',
+  args: {
+    ...sampleArgs,
+    type: 'info',
+  },
+};
 export const InfoDarkType: Story = {
-  name: 'Type: InfoDark',
+  name: 'Type: Info Dark',
   args: {
     ...sampleArgs,
     type: 'info-dark',
   },
 };
-export const NeutralDarkType: Story = {
-  name: 'Type: NeutralDark',
+export const GrayType: Story = {
+  name: 'Type: Gray',
   args: {
     ...sampleArgs,
-    type: 'neutral-dark',
+    type: 'gray',
+  },
+};
+export const GrayDarkType: Story = {
+  name: 'Type: Gray Dark',
+  args: {
+    ...sampleArgs,
+    type: 'gray-dark',
+  },
+};
+export const BlackType: Story = {
+  name: 'Type: Black',
+  args: {
+    ...sampleArgs,
+    type: 'black',
+  },
+};
+export const WhiteType: Story = {
+  name: 'Type: White',
+  args: {
+    ...sampleArgs,
+    type: 'white',
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+      values: [{ name: 'dark', value: '#000000' }],
+    },
+  },
+};
+
+/* -------------------------------- SecondaryType -------------------------------- */
+export const WhiteSecondaryType: Story = {
+  name: 'SecondaryType: White',
+  args: {
+    ...sampleArgs,
+    secondaryType: 'white',
+  },
+};
+export const BlackSecondaryType: Story = {
+  name: 'SecondaryType: Black',
+  args: {
+    ...sampleArgs,
+    secondaryType: 'black',
   },
 };
 

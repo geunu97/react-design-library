@@ -8,6 +8,8 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     | 'danger-dark'
     | 'info'
     | 'info-dark'
+    | 'gray'
+    | 'gray-dark'
     | 'black'
     | 'white';
   weight?: 'outlined' | 'inline' | 'ghost';

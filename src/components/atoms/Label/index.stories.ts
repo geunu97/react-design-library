@@ -70,6 +70,20 @@ export const InfoDarkType: Story = {
     type: 'info-dark',
   },
 };
+export const GrayType: Story = {
+  name: 'Type: Gray',
+  args: {
+    ...sampleArgs,
+    type: 'gray',
+  },
+};
+export const GrayDarkType: Story = {
+  name: 'Type: Gray Dark',
+  args: {
+    ...sampleArgs,
+    type: 'gray-dark',
+  },
+};
 export const BlackType: Story = {
   name: 'Type: Black',
   args: {

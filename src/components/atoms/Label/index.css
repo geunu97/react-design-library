@@ -30,7 +30,7 @@
 .gw-label-type--danger {
   color: #FF2869;
   background-color: #FF2869;
-  border: 1px solid #FF2869;  
+  border: 1px solid #FF2869;
 }
 .gw-label-type--danger-dark {
   color: #ff3232;
@@ -38,14 +38,24 @@
   border: 1px solid #ff3232;
 }
 .gw-label-type--info {
-  color: rgba(37, 99, 235, 1);
-  background-color: rgba(37, 99, 235, 1);
-  border: 1px solid rgba(37, 99, 235, 1);
+  color: #2563eb;
+  background-color: #2563eb;
+  border: 1px solid #2563eb;
 }
 .gw-label-type--info-dark {
   color: #0D47A1;
   background-color: #0D47A1;
   border: 1px solid #0D47A1;
+}
+.gw-label-type--gray {
+  color: lightgray;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+}
+.gw-label-type--gray-dark {
+  color: #696A6B;
+  background-color: #696A6B;
+  border: 1px solid #696A6B;
 }
 .gw-label-type--black {
   color: black;
