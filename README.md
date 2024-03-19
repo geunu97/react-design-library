@@ -124,6 +124,7 @@ function Example() {
         total={100}
         onChangePage={(page: number) => {}}
         type="danger-dark"
+        iconType="danger-dark"
         weight="inline"
         shape="circle"
         maxPageButtons={5}
