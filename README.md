@@ -11,13 +11,6 @@ that can be used to speed up React application development.
 
 </div>
 
-## Documentation
-
-You can find the Examples and Documentation on the website.
-
-- [Examples and Documentation](https://main--64945a5460facec38f6ccd6b.chromatic.com)
-- [NPM Package](https://www.npmjs.com/package/@geunwoo/react-design-system)
-
 ## Installation
 
 To install the stable version, use the command below:
@@ -32,9 +25,22 @@ To install the development version, use the command below:
 npm install @geunwoo/react-design-system@dev
 ```
 
+## Documentation
+
+Chromatic hosts our Storybooks for both the stable and development versions. You can view the components and their documentation here:
+
+- [Stable Version Storybook](https://main--64945a5460facec38f6ccd6b.chromatic.com)
+- [Development Version Storybook](https://dev--64945a5460facec38f6ccd6b.chromatic.com) 
+
+## Package
+
+For the stable and development versions of the Geunwoo/React Design System, visit the NPM package page:
+
+- [NPM Package](https://www.npmjs.com/package/@geunwoo/react-design-system)
+
 ## Examples
 
-We have several examples [on the website](https://main--64945a5460facec38f6ccd6b.chromatic.com).
+You can find various examples in our documentation.
 
 #### Toast
 
