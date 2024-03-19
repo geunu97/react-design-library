@@ -1,18 +1,14 @@
 /* 초기화 */
 .gw-loading {
-  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.gw-loading .gw-loading-icon,
-.gw-loading .gw-loading-percentage {
-  margin: 0;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;  
+  z-index: 99999;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 /* -------------------------------- position ---------------------------------- */
-.gw-loading-position--inline {
-  display: inline;
+.gw-loading-position--none {
+  justify-content: start;
 }
 .gw-loading-position--center {
   position: fixed;
@@ -20,45 +16,46 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 4;
-  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 /* -------------------------------- color ---------------------------------- */
 .gw-loading-color--success {
   color: rgba(16, 185, 129, 1);
 }
-.gw-loading-color--warning {
-  color: rgba(245, 158, 11, 1);
+.gw-loading-type--success {
+  color: #7cbb3f;
 }
-.gw-loading-color--danger {
-  color: rgba(239, 68, 68, 1);
+.gw-loading-type--success-dark {
+  color: #009780;
 }
-.gw-loading-color--info {
-  color: rgba(59, 130, 246, 1);
+.gw-loading-type--warning {
+  color: #ff8e0d;
 }
-.gw-loading-color--neutral {
-  color: rgba(170, 170, 170, 1);
+.gw-loading-type--warning-dark {
+  color: #ad580e;
 }
-.gw-loading-color--black {
-  color: rgb(31, 31, 31);
+.gw-loading-type--danger {
+  color: #FF2869;
 }
-
-/* -------------------------------- size ---------------------------------- */
-.gw-loading-size--smallest {
-  font-size: 5px;
+.gw-loading-type--danger-dark {
+  color: #ff3232;
 }
-.gw-loading-size--smaller {
-  font-size: 5px;
+.gw-loading-type--info {
+  color: #2563eb;
 }
-.gw-loading-size--medium {
-  font-size: 5px;
+.gw-loading-type--info-dark {
+  color: #0D47A1;
 }
-.gw-loading-size--larger {
-  font-size: 5px;
+.gw-loading-type--gray {
+  color: lightgray;
 }
-.gw-loading-size--largest {
-  font-size: 6px;
+.gw-loading-type--gray-dark {
+  color: #696A6B;
+}
+.gw-loading-type--black {
+  color: black;
+}
+.gw-loading-type--white {
+  color: white;
 }

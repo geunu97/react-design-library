@@ -9,41 +9,83 @@ const meta: Meta<typeof Loading> = {
 export default meta;
 export type Story = StoryObj<typeof Loading>;
 
-/* -------------------------------- Color -------------------------------- */
-export const SuccessColor: Story = {
-  name: 'Color: Success',
+/* -------------------------------- Type -------------------------------- */
+export const SuccessType: Story = {
+  name: 'Type: Success',
   args: {
-    color: 'success',
+    type: 'success',
   },
 };
-export const WarningColor: Story = {
-  name: 'Color: Warning',
+export const SuccessDarkType: Story = {
+  name: 'Type: Success Dark',
   args: {
-    color: 'warning',
+    type: 'success-dark',
   },
 };
-export const DangerColor: Story = {
-  name: 'Color: Danger',
+export const WarningType: Story = {
+  name: 'Type: Warning',
   args: {
-    color: 'danger',
+    type: 'warning',
   },
 };
-export const InfoColor: Story = {
-  name: 'Color: Info',
+export const WarningDarkType: Story = {
+  name: 'Type: Warning Dark',
   args: {
-    color: 'info',
+    type: 'warning-dark',
   },
 };
-export const NeutralColor: Story = {
-  name: 'Color: Neutral',
+export const DangerType: Story = {
+  name: 'Type: Danger',
   args: {
-    color: 'neutral',
+    type: 'danger',
   },
 };
-export const BlackColor: Story = {
-  name: 'Color: Black',
+export const DangerDarkType: Story = {
+  name: 'Type: Danger Dark',
   args: {
-    color: 'black',
+    type: 'danger-dark',
+  },
+};
+export const InfoType: Story = {
+  name: 'Type: Info',
+  args: {
+    type: 'info',
+  },
+};
+export const InfoDarkType: Story = {
+  name: 'Type: Info Dark',
+  args: {
+    type: 'info-dark',
+  },
+};
+export const GrayType: Story = {
+  name: 'Type: Gray',
+  args: {
+    type: 'gray',
+  },
+};
+export const GrayDarkType: Story = {
+  name: 'Type: Gray Dark',
+  args: {
+    type: 'gray-dark',
+  },
+};
+export const BlackType: Story = {
+  name: 'Type: Black',
+  args: {
+    type: 'black',
+  },
+};
+export const WhiteType: Story = {
+  name: 'Type: White',
+  args: {
+    type: 'white',
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+      values: [{ name: 'dark', value: '#000000' }],
+    },
   },
 };
 
@@ -51,38 +93,49 @@ export const BlackColor: Story = {
 export const SmallestSize: Story = {
   name: 'Size: Smallest',
   args: {
-    size: 'smallest',
+    iconSize: 'smallest',
   },
 };
 export const SmallerSize: Story = {
   name: 'Size: Smaller',
   args: {
-    size: 'smaller',
+    iconSize: 'smaller',
   },
 };
 export const MediumSize: Story = {
   name: 'Size: Medium',
   args: {
-    size: 'medium',
+    iconSize: 'medium',
   },
 };
 export const LargerSize: Story = {
   name: 'Size: Larger',
   args: {
-    size: 'larger',
+    iconSize: 'larger',
   },
 };
 export const LargestSize: Story = {
   name: 'Size: Largest',
   args: {
-    size: 'largest',
+    iconSize: 'largest',
   },
 };
 
-/* -------------------------------- Percentage -------------------------------- */
-export const Percentage: Story = {
-  name: 'Percentage : number',
+/* -------------------------------- showPercentage -------------------------------- */
+export const ShowPercentage: Story = {
+  name: 'ShowPercentage : true',
   args: {
+    showPercentage: true,
     percentage: 72,
+  },
+};
+
+/* -------------------------------- percentageSize -------------------------------- */
+export const PercentageSize: Story = {
+  name: 'PercentageSize : string',
+  args: {
+    showPercentage: true,
+    percentage: 72,
+    percentageSize: '12px',
   },
 };
