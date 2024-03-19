@@ -11,7 +11,7 @@ const Pagination = ({
   weight = 'inline',
   shape = 'circle',
   page,
-  pageSize,
+  pageSize, 
   total,
   maxPageButtons = 5,
   showPrevButtonIcon = true,
@@ -22,7 +22,7 @@ const Pagination = ({
   onShowContent,
   className,
 }: PaginationProps) => {
-  const totalPage = total > 0 ? Math.ceil(total / pageSize) : 1;
+  const totalPage = Math.ceil(total / pageSize);
   const halfMaxButtons = Math.floor(maxPageButtons / 2);
 
   const renderPageButtons = () => {
