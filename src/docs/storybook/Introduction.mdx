@@ -51,9 +51,12 @@ function Example() {
   const onClick = () => {
     showGToast({ 
       type: "success",
-      shape: "squre",
+      shape: "square",
       title: "This is a sample title",
       content:"This is a sample description",
+      titleFontSize: '16px',
+      contentFontSize: '14px',
+      width: '350px',
       duration: 5000,
       showToastIcon: true,
       showCloseIcon: true
