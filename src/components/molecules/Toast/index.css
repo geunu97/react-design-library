@@ -1,13 +1,13 @@
 /* 초기화 */
 .gw-toast-list {
   position: fixed; 
-  bottom: 0;
+  bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 999999;
   display: flex;
   flex-direction: column-reverse; 
-  gap: 10px;
+  gap: 15px;
 }
 .gw-toast {
   display: flex;
@@ -15,14 +15,14 @@
 }
 .gw-toast-text {
   flex: 1;
-  margin: 0 12px;
-  font-size: 14px;
-  line-height: 20px;
+  margin: 0 16px;  
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .gw-toast-title {
   margin: 0;
-  font-weight: 500;
-  margin-bottom: 8px;
+  font-weight: 600;
 }
 .gw-toast-content {
   margin: 0;
@@ -33,7 +33,7 @@
 
 /* -------------------------------- type -------------------------------- */
 .gw-toast-type--success {
-  background-color: rgba(5, 150, 105, 0.1);
+  background-color: rgba(5, 150, 105, 0.2);
   color: rgba(5, 150, 105, 1);
 }
 .gw-toast-type--success .gw-toast-content {
@@ -42,8 +42,12 @@
 .gw-toast-type--success .gw-toast-close {
   color: rgba(16, 185, 129, 1);
 }
+.gw-toast-type--success-dark {
+  background-color: rgba(16, 185, 129, 0.8);
+  color: #fff;
+}
 .gw-toast-type--warning {
-  background-color: rgba(217, 119, 6, 0.1);
+  background-color: rgba(217, 119, 6, 0.2);
   color: rgba(217, 119, 6, 1);
 }
 .gw-toast-type--warning .gw-toast-content {
@@ -52,8 +56,12 @@
 .gw-toast-type--warning .gw-toast-close {
   color: rgba(245, 158, 11, 1);
 }
+.gw-toast-type--warning-dark {
+  background-color: rgba(245, 158, 11, 0.8);
+  color: #fff;
+}
 .gw-toast-type--danger {
-  background-color: rgba(220, 38, 38, 0.1);
+  background-color: rgba(220, 38, 38, 0.2);
   color: rgba(220, 38, 38, 1);
 }
 .gw-toast-type--danger .gw-toast-content {
@@ -62,8 +70,12 @@
 .gw-toast-type--danger .gw-toast-close {
   color: rgba(239, 68, 68, 1);
 }
+.gw-toast-type--danger-dark {
+  background-color: rgba(239, 68, 68, 0.8);
+  color: #fff;
+}
 .gw-toast-type--info {
-  background-color: rgba(37, 99, 235, 0.1);
+  background-color: rgba(37, 99, 235, 0.2);
   color: rgba(37, 99, 235, 1);
 }
 .gw-toast-type--info .gw-toast-content {
@@ -72,19 +84,36 @@
 .gw-toast-type--info .gw-toast-close {
   color: rgba(59, 130, 246, 1);
 }
-.gw-toast-type--neutral {
-  background-color: rgba(145, 145, 145, 0.1);
+.gw-toast-type--info-dark {
+  background-color: rgba(59, 130, 246, 0.8);
+  color: #fff;
+}
+.gw-toast-type--gray {
+  background-color: rgba(145, 145, 145, 0.2);
   color: rgba(145, 145, 145, 1);
 }
-.gw-toast-type--neutral .gw-toast-content {
+.gw-toast-type--gray .gw-toast-content {
   color: rgba(170, 170, 170, 1);
 }
-.gw-toast-type--neutral .gw-toast-close {
+.gw-toast-type--gray .gw-toast-close {
   color: rgba(170, 170, 170, 1);
+}
+.gw-toast-type--gary-dark {
+  background-color: rgba(170, 170, 170, 0.8);
+  color: #fff;
+}
+.gw-toast-type--black {
+  background-color: black;
+  color: #fff;
+}
+.gw-toast-type--white {
+  background-color: white;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* -------------------------------- shape -------------------------------- */
-.gw-toast-shape--squre {
+.gw-toast-shape--square {
   border-radius: 6px;
   padding: 16px;
 }

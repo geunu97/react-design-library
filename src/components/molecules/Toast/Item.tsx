@@ -10,28 +10,50 @@ import './index.css';
 
 const ToastItem = ({
   type = 'success',
-  shape = 'squre',
+  shape = 'square',
   title,
   content,
+  titleFontSize = '16px',
+  contentFontSize = '14px',
+  width = '350px',
   showToastIcon = true,
   showCloseIcon = true,
   index,
+  className,
   onClose,
 }: ToastItemProps) => {
   return (
-    <div className={['gw-toast', `gw-toast-type--${type}`, `gw-toast-shape--${shape}`].join(' ')}>
+    <div
+      className={`gw-toast gw-toast-type--${type} gw-toast-shape--${shape} ${className ? className : ''}`}
+      style={{ width: width }}
+    >
       {showToastIcon && (
         <div className="gw-toast-icon">
           {type === 'success' && <SuccessIcon width="20px" height="20px" />}
+          {type === 'success-dark' && <SuccessIcon width="20px" height="20px" />}
           {type === 'warning' && <WarningIcon width="20px" height="20px" />}
+          {type === 'warning-dark' && <WarningIcon width="20px" height="20px" />}
           {type === 'danger' && <DangerIcon width="20px" height="20px" />}
+          {type === 'danger-dark' && <DangerIcon width="20px" height="20px" />}
           {type === 'info' && <InfoIcon width="20px" height="20px" />}
-          {type === 'neutral' && <NeutralIcon width="20px" height="20px" />}
+          {type === 'info-dark' && <InfoIcon width="20px" height="20px" />}
+          {type === 'gray' && <NeutralIcon width="20px" height="20px" />}
+          {type === 'gray-dark' && <NeutralIcon width="20px" height="20px" />}
+          {type === 'black' && <NeutralIcon width="20px" height="20px" />}
+          {type === 'white' && <NeutralIcon width="20px" height="20px" />}
         </div>
       )}
       <div className="gw-toast-text">
-        <p className="gw-toast-title">{title}</p>
-        <p className="gw-toast-content">{content}</p>
+        {title && (
+          <p className="gw-toast-title" style={{ fontSize: titleFontSize }}>
+            {title}
+          </p>
+        )}
+        {content && (
+          <p className="gw-toast-content" style={{ fontSize: contentFontSize }}>
+            {content}
+          </p>
+        )}
       </div>
       {showCloseIcon && (
         <div className="gw-toast-close" onClick={() => onClose(index)}>

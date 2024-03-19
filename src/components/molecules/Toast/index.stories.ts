@@ -22,11 +22,25 @@ export const SuccessType: Story = {
     type: 'success',
   },
 };
+export const SuccessDarkType: Story = {
+  name: 'Type: Success Dark',
+  args: {
+    ...sampleArgs,
+    type: 'success-dark',
+  },
+};
 export const WarningType: Story = {
   name: 'Type: Warning',
   args: {
     ...sampleArgs,
     type: 'warning',
+  },
+};
+export const WarningDarkType: Story = {
+  name: 'Type: Warning Dark',
+  args: {
+    ...sampleArgs,
+    type: 'warning-dark',
   },
 };
 export const DangerType: Story = {
@@ -36,6 +50,13 @@ export const DangerType: Story = {
     type: 'danger',
   },
 };
+export const DangerDarkType: Story = {
+  name: 'Type: Danger Dark',
+  args: {
+    ...sampleArgs,
+    type: 'danger-dark',
+  },
+};
 export const InfoType: Story = {
   name: 'Type: Info',
   args: {
@@ -43,20 +64,54 @@ export const InfoType: Story = {
     type: 'info',
   },
 };
-export const NeutralType: Story = {
-  name: 'Type: Neutral',
+export const InfoDarkType: Story = {
+  name: 'Type: Info Dark',
   args: {
     ...sampleArgs,
-    type: 'neutral',
+    type: 'info-dark',
+  },
+};
+export const GrayType: Story = {
+  name: 'Type: Gray',
+  args: {
+    ...sampleArgs,
+    type: 'gray',
+  },
+};
+export const GrayDarkType: Story = {
+  name: 'Type: Gray Dark',
+  args: {
+    ...sampleArgs,
+    type: 'gray-dark',
+  },
+};
+export const BlackType: Story = {
+  name: 'Type: Black',
+  args: {
+    ...sampleArgs,
+    type: 'black',
+  },
+};
+export const WhiteType: Story = {
+  name: 'Type: White',
+  args: {
+    ...sampleArgs,
+    type: 'white',
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+      values: [{ name: 'dark', value: '#000000' }],
+    },
   },
 };
 
 /* -------------------------------- Shape -------------------------------- */
-export const SqureShape: Story = {
-  name: 'Shape: Squre',
+export const SquareShape: Story = {
+  name: 'Shape: Square',
   args: {
     ...sampleArgs,
-    shape: 'squre',
+    shape: 'square',
   },
 };
 export const CircleShape: Story = {
@@ -64,6 +119,42 @@ export const CircleShape: Story = {
   args: {
     ...sampleArgs,
     shape: 'circle',
+  },
+};
+
+/* -------------------------------- Width -------------------------------- */
+export const Width: Story = {
+  name: 'Width: string',
+  args: {
+    ...sampleArgs,
+    width: '90%',
+  },
+};
+
+/* -------------------------------- TitleFontSize -------------------------------- */
+export const TitleFontSize: Story = {
+  name: 'TitleFontSize: string',
+  args: {
+    ...sampleArgs,
+    titleFontSize: '22px',
+  },
+};
+
+/* -------------------------------- ContentFontSize -------------------------------- */
+export const ContentFontSize: Story = {
+  name: 'ContentFontSize: string',
+  args: {
+    ...sampleArgs,
+    contentFontSize: '20px',
+  },
+};
+
+/* -------------------------------- When there is no title -------------------------------- */
+export const EmptyTitle: Story = {
+  name: 'Title: empty',
+  args: {
+    ...sampleArgs,
+    title: '',
   },
 };
 
