@@ -20,8 +20,16 @@ You can find the Examples and Documentation on the website.
 
 ## Installation
 
+To install the stable version, use the command below:
+
 ```
 npm install @geunwoo/react-design-system
+```
+
+To install the development version, use the command below:
+
+```
+npm install @geunwoo/react-design-system@dev
 ```
 
 ## Examples
