@@ -83,13 +83,24 @@ import { showGAlert } from '@geunwoo/react-design-system';
 function Example() {
   const onClick = () => {
     showGAlert({
+      title: "경고",
       content: '정말 삭제하시겠습니까?',     
       type: "danger-dark",
-      confirmButtonText: "확인",      
-      onConfirm: () => {},
-      showCancelButton: true,
-      cancelButtonText: "취소",
       position: 'center-center',
+      width: "300px",
+      height: "200px",
+      buttonHeight: '60px',
+      titleSize: '20px',
+      contentSize: '16px',
+      buttonTextSize: '18px',
+      titleAlignment: 'center',
+      contentAlignment: 'center',
+      titleVerticalAlignment: 'center',
+      contentVerticalAlignment: 'center',
+      confirmButtonText: "확인",      
+      cancelButtonText: "취소",
+      showCancelButton: true,
+      onConfirm: () => {},
     })
   }
 
