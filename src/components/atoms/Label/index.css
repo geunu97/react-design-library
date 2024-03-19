@@ -2,79 +2,58 @@
 .gw-label {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  cursor: pointer;
   display: inline-block;
   line-height: 1;
 }
 
-/* -------------------------------- color ---------------------------------- */
-.gw-label-color--primary {
-  color: #4db6ac;
-  background-color: #4db6ac;
-  border: 1px solid #4db6ac;
-}
-.gw-label-color--primary-dark {
-  color: #00645a;
-  background-color: #00645a;
-  border: 1px solid #00645a;
-}
-.gw-label-color--secondary {
-  color: #dbdbdb;
-  background-color: #dbdbdb;
-  border: 1px solid #dbdbdb;
-}
-.gw-label-color--secondary-dark {
-  color: #868686;
-  background-color: #868686;
-  border: 1px solid #868686;
-}
-.gw-label-color--success {
+/* -------------------------------- type ---------------------------------- */
+.gw-label-type--success {
   color: #7cbb3f;
   background-color: #7cbb3f;
   border: 1px solid #7cbb3f;
 }
-.gw-label-color--success-dark {
+.gw-label-type--success-dark {
   color: #009780;
   background-color: #009780;
   border: 1px solid #009780;
 }
-.gw-label-color--warning {
+.gw-label-type--warning {
   color: #ff8e0d;
   background-color: #ff8e0d;
   border: 1px solid #ff8e0d;
 }
-.gw-label-color--warning-dark {
+.gw-label-type--warning-dark {
   color: #ad580e;
   background-color: #ad580e;
   border: 1px solid #ad580e;
 }
-.gw-label-color--danger {
+.gw-label-type--danger {
   color: #FF2869;
   background-color: #FF2869;
   border: 1px solid #FF2869;  
 }
-.gw-label-color--danger-dark {
+.gw-label-type--danger-dark {
   color: #ff3232;
   background-color: #ff3232;
   border: 1px solid #ff3232;
 }
-.gw-label-color--info {
+.gw-label-type--info {
   color: rgba(37, 99, 235, 1);
   background-color: rgba(37, 99, 235, 1);
   border: 1px solid rgba(37, 99, 235, 1);
 }
-.gw-label-color--info-dark {
+.gw-label-type--info-dark {
   color: #0D47A1;
   background-color: #0D47A1;
   border: 1px solid #0D47A1;
 }
-.gw-label-color--black {
+.gw-label-type--black {
   color: black;
   background-color: black;
   border: 1px solid black;
 }
-.gw-label-color--white {
-  color: black;
+.gw-label-type--white {
+  color: white;
   background-color: white;
   border: 1px solid white;
 }
@@ -115,7 +94,7 @@
 }
 
 /* -------------------------------- shape -------------------------------- */
-.gw-label-shape--squre {
+.gw-label-shape--square {
   border-radius: 0;
 }
 .gw-label-shape--circle {

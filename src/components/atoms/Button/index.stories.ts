@@ -9,47 +9,85 @@ const meta: Meta<typeof Button> = {
 export default meta;
 export type Story = StoryObj<typeof Button>;
 
-/* -------------------------------- Color -------------------------------- */
-export const PrimaryColor: Story = {
-  name: 'Color: Primary',
+const sampleArgs = {
+  label: 'Button',
+};
+
+/* -------------------------------- Types -------------------------------- */
+export const SuccessTypes: Story = {
+  name: 'Types: Success',
   args: {
-    color: 'primary',
-    label: 'Button',
+    ...sampleArgs,
+    types: 'success',
   },
 };
-export const SecondaryColor: Story = {
-  name: 'Color: Secondary',
+export const SuccessDarkTypes: Story = {
+  name: 'Types: Success Dark',
   args: {
-    color: 'secondary',
-    label: 'Button',
+    ...sampleArgs,
+    types: 'success-dark',
   },
 };
-export const BlackColor: Story = {
-  name: 'Color: Black',
+export const WarningTypes: Story = {
+  name: 'Types: Warning',
   args: {
-    color: 'black',
-    label: 'Button',
+    ...sampleArgs,
+    types: 'warning',
   },
 };
-export const SuccessColor: Story = {
-  name: 'Color: Success',
+export const WarningDarkTypes: Story = {
+  name: 'Types: Warning Dark',
   args: {
-    color: 'success',
-    label: 'Button',
+    ...sampleArgs,
+    types: 'warning-dark',
   },
 };
-export const WarningColor: Story = {
-  name: 'Color: Warning',
+export const DangerTypes: Story = {
+  name: 'Types: Danger',
   args: {
-    color: 'warning',
-    label: 'Button',
+    ...sampleArgs,
+    types: 'danger',
   },
 };
-export const DangerColor: Story = {
-  name: 'Color: Danger',
+export const DangerDarkTypes: Story = {
+  name: 'Types: Danger Dark',
   args: {
-    color: 'danger',
-    label: 'Button',
+    ...sampleArgs,
+    types: 'danger-dark',
+  },
+};
+export const InfoTypes: Story = {
+  name: 'Types: Info',
+  args: {
+    ...sampleArgs,
+    types: 'info',
+  },
+};
+export const InfoDarkTypes: Story = {
+  name: 'Types: Info Dark',
+  args: {
+    ...sampleArgs,
+    types: 'info-dark',
+  },
+};
+export const BlackTypes: Story = {
+  name: 'Types: Black',
+  args: {
+    ...sampleArgs,
+    types: 'black',
+  },
+};
+export const WhiteTypes: Story = {
+  name: 'Types: White',
+  args: {
+    ...sampleArgs,
+    types: 'white',
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+      values: [{ name: 'dark', value: '#000000' }],
+    },
   },
 };
 
@@ -57,75 +95,38 @@ export const DangerColor: Story = {
 export const OutlinedWeight: Story = {
   name: 'Weight: Outlined',
   args: {
+    ...sampleArgs,
     weight: 'outlined',
-    label: 'Button',
   },
 };
 export const InlineWeight: Story = {
   name: 'Weight: Inline',
   args: {
+    ...sampleArgs,
     weight: 'inline',
-    label: 'Button',
   },
 };
 export const GhostWeight: Story = {
   name: 'Weight: Ghost',
   args: {
+    ...sampleArgs,
     weight: 'ghost',
-    label: 'Button',
-  },
-};
-
-/* -------------------------------- Size -------------------------------- */
-export const SmallestSize: Story = {
-  name: 'Size: Smallest',
-  args: {
-    size: 'smallest',
-    label: 'Button',
-  },
-};
-export const SmallerSize: Story = {
-  name: 'Size: Smaller',
-  args: {
-    size: 'smaller',
-    label: 'Button',
-  },
-};
-export const MediumSize: Story = {
-  name: 'Size: Medium',
-  args: {
-    size: 'medium',
-    label: 'Button',
-  },
-};
-export const LargerSize: Story = {
-  name: 'Size: Larger',
-  args: {
-    size: 'larger',
-    label: 'Button',
-  },
-};
-export const LargestSize: Story = {
-  name: 'Size: Largest',
-  args: {
-    size: 'largest',
-    label: 'Button',
   },
 };
 
 /* -------------------------------- Shape -------------------------------- */
-export const SqureShape: Story = {
-  name: 'Shape: Squre',
+export const SquareShape: Story = {
+  name: 'Shape: square',
   args: {
-    shape: 'squre',
-    label: 'Button',
+    ...sampleArgs,
+    shape: 'square',
   },
 };
 export const CircleShape: Story = {
   name: 'Shape: Circle',
   args: {
+    ...sampleArgs,
     shape: 'circle',
-    label: 'Button',
   },
 };
 
@@ -133,7 +134,27 @@ export const CircleShape: Story = {
 export const Disabled: Story = {
   name: 'Disabled: True',
   args: {
+    ...sampleArgs,
     disabled: true,
-    label: 'Button',
+  },
+};
+
+/* -------------------------------- fontSize -------------------------------- */
+export const FontSize: Story = {
+  name: 'FontSize: string',
+  args: {
+    ...sampleArgs,
+    fontSize: '14px',
+    padding: '11px 18px',
+  },
+};
+
+/* -------------------------------- padding -------------------------------- */
+export const Padding: Story = {
+  name: 'Padding: string',
+  args: {
+    ...sampleArgs,
+    fontSize: '16px',
+    padding: '14px 22px',
   },
 };

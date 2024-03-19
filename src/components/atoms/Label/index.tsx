@@ -3,22 +3,20 @@ import './index.css';
 import { LabelProps } from './type';
 
 const Label = ({
-  color = 'danger-dark',
+  type = 'danger-dark',
   weight = 'outlined',
-  size = 'smaller',
+  fontSize = '14px',
+  padding = '11px 18px',
   shape = 'circle',
   value,
   className,
 }: LabelProps) => {
   return (
     <span
-      className={`${[
-        'gw-label',
-        `gw-label-color--${color}`,
-        `gw-label-weight--${weight}`,
-        `gw-label-size--${size}`,
-        `gw-label-shape--${shape}`,
-      ].join(' ')} ${className ? className : ''}`}
+      className={`gw-label gw-label-type--${type} gw-label-weight--${weight} gw-label-shape--${shape} ${
+        className ? className : ''
+      }`}
+      style={{ padding, fontSize }}
     >
       {value}
     </span>

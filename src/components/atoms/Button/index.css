@@ -13,41 +13,56 @@
   cursor: not-allowed;
 }
 
-/* -------------------------------- color ---------------------------------- */
-.gw-button-color--primary {
-  color: #4db6ac;
-  background-color: #4db6ac;
-  border: 1px solid #4db6ac;
-}
-.gw-button-color--secondary {
-  color: #dbdbdb;
-  background-color: #dbdbdb;
-  border: 1px solid #dbdbdb;
-}
-.gw-button-color--black {
-  color: black;
-  background-color: black;
-  border: 1px solid black;
-}
-.gw-button-color--white {
-  color: white;
-  background-color: white;
-  border: 1px solid white;
-}
-.gw-button-color--success {
+/* -------------------------------- types ---------------------------------- */
+.gw-button-types--success {
   color: #7cbb3f;
   background-color: #7cbb3f;
   border: 1px solid #7cbb3f;
 }
-.gw-button-color--warning {
+.gw-button-types--success-dark {
+  color: #009780;
+  background-color: #009780;
+  border: 1px solid #009780;
+}
+.gw-button-types--warning {
   color: #ff8e0d;
   background-color: #ff8e0d;
   border: 1px solid #ff8e0d;
 }
-.gw-button-color--danger {
+.gw-button-types--warning-dark {
+  color: #ad580e;
+  background-color: #ad580e;
+  border: 1px solid #ad580e;
+}
+.gw-button-types--danger {
   color: #ff3232;
   background-color: #ff3232;
   border: 1px solid #ff3232;
+}
+.gw-button-types--danger-dark {
+  color: #ff3232;
+  background-color: #ff3232;
+  border: 1px solid #ff3232;
+}
+.gw-button-types--info {
+  color: rgba(37, 99, 235, 1);
+  background-color: rgba(37, 99, 235, 1);
+  border: 1px solid rgba(37, 99, 235, 1);
+}
+.gw-button-types--info-dark {
+  color: #0D47A1;
+  background-color: #0D47A1;
+  border: 1px solid #0D47A1;
+}
+.gw-button-types--black {
+  color: black;
+  background-color: black;
+  border: 1px solid black;
+}
+.gw-button-types--white {
+  color: white;
+  background-color: white;
+  border: 1px solid white;
 }
 
 /* -------------------------------- weight -------------------------------- */
@@ -86,7 +101,7 @@
 }
 
 /* -------------------------------- shape -------------------------------- */
-.gw-button-shape--squre {
+.gw-button-shape--square {
   border-radius: 0;
 }
 .gw-button-shape--circle {

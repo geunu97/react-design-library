@@ -1,8 +1,19 @@
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  color?: 'primary' | 'secondary' | 'black' | 'success' | 'warning' | 'danger';
+  types?:
+    | 'success'
+    | 'success-dark'
+    | 'warning'
+    | 'warning-dark'
+    | 'danger'
+    | 'danger-dark'
+    | 'info'
+    | 'info-dark'
+    | 'black'
+    | 'white';
   weight?: 'outlined' | 'inline' | 'ghost';
-  size?: 'smallest' | 'smaller' | 'medium' | 'larger' | 'largest';
-  shape?: 'squre' | 'circle';
+  shape?: 'square' | 'circle';
+  fontSize?: string;
+  padding?: string;
   disabled?: boolean;
   label?: string;
   onClick?: () => void;

@@ -1,9 +1,5 @@
 export interface LabelProps {
-  color?:
-    | 'primary'
-    | 'primary-dark'
-    | 'secondary'
-    | 'secondary-dark'
+  type?:
     | 'success'
     | 'success-dark'
     | 'warning'
@@ -12,10 +8,12 @@ export interface LabelProps {
     | 'danger-dark'
     | 'info'
     | 'info-dark'
-    | 'black';
+    | 'black'
+    | 'white';
   weight?: 'outlined' | 'inline' | 'ghost';
-  size?: 'smallest' | 'smaller' | 'medium' | 'larger' | 'largest';
-  shape?: 'squre' | 'circle';
+  shape?: 'square' | 'circle';
+  fontSize?: string;
+  padding?: string;
   value?: string;
   className?: string;
 }
