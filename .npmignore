@@ -4,6 +4,7 @@
 /.storybook
 /src
 
+.prettierrc
 .browserslistrc
 release.config.js
 rollup.config.js
