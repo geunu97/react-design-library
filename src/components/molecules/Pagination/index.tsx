@@ -11,7 +11,7 @@ const Pagination = ({
   weight = 'inline',
   shape = 'circle',
   page,
-  pageSize, 
+  pageSize,
   total,
   maxPageButtons = 5,
   showPrevButtonIcon = true,
