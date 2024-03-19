@@ -1,14 +1,21 @@
+export type PaginationType =
+  | 'success'
+  | 'success-dark'
+  | 'warning'
+  | 'warning-dark'
+  | 'danger'
+  | 'danger-dark'
+  | 'info'
+  | 'info-dark'
+  | 'gray'
+  | 'gray-dark'
+  | 'black'
+  | 'white';
+
 export interface PaginationProps {
-  type?:
-    | 'success'
-    | 'success-dark'
-    | 'warning'
-    | 'warning-dark'
-    | 'danger'
-    | 'danger-dark'
-    | 'info'
-    | 'info-dark'
-    | 'neutral-dark';
+  type?: PaginationType;
+  iconType?: PaginationType;
+  textType?: PaginationType;
   weight?: 'inline' | 'ghost';
   shape?: 'square' | 'circle';
   page: number;

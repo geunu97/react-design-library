@@ -6,6 +6,8 @@ import './index.css';
 
 const Pagination = ({
   type = 'danger-dark',
+  iconType = 'black',
+  textType = 'gray-dark',
   weight = 'inline',
   shape = 'circle',
   page,
@@ -55,35 +57,53 @@ const Pagination = ({
 
   return (
     <div
-      className={`gw-pagination gw-pagination-type--${type} gw-pagination-weight--${weight} gw-pagination-shape--${shape} ${
+      className={`gw-pagination gw-pagination-type--${type} gw-pagination-textType--${textType} gw-pagination-iconType--${iconType} gw-pagination-weight--${weight} gw-pagination-shape--${shape} ${
         className ? className : ''
       }`}
     >
       {page > 1 ? (
         <button className="gw-pagination-prevbutton" onClick={() => onChangePage(page - 1)}>
-          {showPrevButtonIcon && <PrevIcon width="26px" height="26px" />}
+          {showPrevButtonIcon && (
+            <span className="gw-pagination-prevbutton-icon">
+              <PrevIcon width="26px" height="26px" />
+            </span>
+          )}
           {prevButtonText && <span className="gw-pagination-prevbutton-text">{prevButtonText}</span>}
         </button>
       ) : (
         <button className="gw-pagination-prevbutton" disabled>
-          {showPrevButtonIcon && <PrevIcon width="26px" height="26px" />}
+          {showPrevButtonIcon && (
+            <span className="gw-pagination-prevbutton-icon">
+              <PrevIcon width="26px" height="26px" />
+            </span>
+          )}
           {prevButtonText && <span className="gw-pagination-prevbutton-text">{prevButtonText}</span>}
         </button>
       )}
+
       {onShowContent ? (
         <span className="gw-pagination-showcontent">{onShowContent(page, pageSize)}</span>
       ) : (
         <span className="gw-pagination-pagebuttons">{renderPageButtons()}</span>
       )}
+
       {page < totalPage ? (
         <button className="gw-pagination-nextbutton" onClick={() => onChangePage(page + 1)}>
           {nextButtonText && <span className="gw-pagination-nextbutton-text">{nextButtonText}</span>}
-          {showNextButtonIcon && <NextIcon width="26px" height="26px" />}
+          {showNextButtonIcon && (
+            <span className="gw-pagination-nextbutton-icon">
+              <NextIcon width="26px" height="26px" />
+            </span>
+          )}
         </button>
       ) : (
         <button className="gw-pagination-nextbutton" disabled>
           {nextButtonText && <span className="gw-pagination-nextbutton-text">{nextButtonText}</span>}
-          {showNextButtonIcon && <NextIcon width="26px" height="26px" />}
+          {showNextButtonIcon && (
+            <span className="gw-pagination-nextbutton-icon">
+              <NextIcon width="26px" height="26px" />
+            </span>
+          )}
         </button>
       )}
     </div>

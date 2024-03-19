@@ -25,7 +25,7 @@ export const SuccessType: Story = {
   },
 };
 export const SuccessDarkType: Story = {
-  name: 'Type: SuccessDark',
+  name: 'Type: Success Dark',
   args: {
     ...sampleArgs,
     type: 'success-dark',
@@ -39,7 +39,7 @@ export const WarningType: Story = {
   },
 };
 export const WarningDarkType: Story = {
-  name: 'Type: WarningDark',
+  name: 'Type: Warning Dark',
   args: {
     ...sampleArgs,
     type: 'warning-dark',
@@ -53,7 +53,7 @@ export const DangerType: Story = {
   },
 };
 export const DangerDarkType: Story = {
-  name: 'Type: DangerDark',
+  name: 'Type: Danger Dark',
   args: {
     ...sampleArgs,
     type: 'danger-dark',
@@ -67,17 +67,121 @@ export const InfoType: Story = {
   },
 };
 export const InfoDarkType: Story = {
-  name: 'Type: InfoDark',
+  name: 'Type: Info Dark',
   args: {
     ...sampleArgs,
     type: 'info-dark',
   },
 };
-export const NeutralDarkType: Story = {
-  name: 'Type: NeutralDark',
+export const GrayType: Story = {
+  name: 'Type: Gray',
   args: {
     ...sampleArgs,
-    type: 'neutral-dark',
+    type: 'gray',
+  },
+};
+export const GrayDarkType: Story = {
+  name: 'Type: Gray Dark',
+  args: {
+    ...sampleArgs,
+    type: 'gray-dark',
+  },
+};
+export const BlackType: Story = {
+  name: 'Type: Black',
+  args: {
+    ...sampleArgs,
+    type: 'black',
+  },
+};
+
+/* -------------------------------- IconType -------------------------------- */
+export const SuccessIconType: Story = {
+  name: 'Icon Type: Success',
+  args: {
+    ...sampleArgs,
+    type: 'success',
+    iconType: 'success',
+  },
+};
+export const SuccessDarkIconType: Story = {
+  name: 'Icon Type: Success Dark',
+  args: {
+    ...sampleArgs,
+    type: 'success-dark',
+    iconType: 'success-dark',
+  },
+};
+export const WarningIconType: Story = {
+  name: 'Icon Type: Warning',
+  args: {
+    ...sampleArgs,
+    type: 'warning',
+    iconType: 'warning',
+  },
+};
+export const WarningDarkIconType: Story = {
+  name: 'Icon Type: Warning Dark',
+  args: {
+    ...sampleArgs,
+    type: 'warning-dark',
+    iconType: 'warning-dark',
+  },
+};
+export const DangerIconType: Story = {
+  name: 'Icon Type: Danger',
+  args: {
+    ...sampleArgs,
+    type: 'danger',
+    iconType: 'danger',
+  },
+};
+export const DangerDarkIconType: Story = {
+  name: 'Icon Type: Danger Dark',
+  args: {
+    ...sampleArgs,
+    type: 'danger-dark',
+    iconType: 'danger-dark',
+  },
+};
+export const InfoIconType: Story = {
+  name: 'Icon Type: Info',
+  args: {
+    ...sampleArgs,
+    type: 'info',
+    iconType: 'info',
+  },
+};
+export const InfoDarkIconType: Story = {
+  name: 'Icon Type: Info Dark',
+  args: {
+    ...sampleArgs,
+    type: 'info-dark',
+    iconType: 'info-dark',
+  },
+};
+export const GrayIconType: Story = {
+  name: 'Icon Type: Gray',
+  args: {
+    ...sampleArgs,
+    type: 'gray',
+    iconType: 'gray',
+  },
+};
+export const GrayDarkIconType: Story = {
+  name: 'Icon Type: Gray Dark',
+  args: {
+    ...sampleArgs,
+    type: 'gray-dark',
+    iconType: 'gray-dark',
+  },
+};
+export const BlackIconType: Story = {
+  name: 'Icon Type: Black',
+  args: {
+    ...sampleArgs,
+    type: 'black',
+    iconType: 'black',
   },
 };
 

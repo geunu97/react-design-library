@@ -3,80 +3,190 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .gw-pagination button {
   border: none;
   background-color: inherit;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 .gw-pagination-prevbutton, .gw-pagination-nextbutton {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 3px;
 }
 .gw-pagination-prevbutton:disabled, .gw-pagination-nextbutton:disabled {
-  opacity: 0.5;
+  opacity: 0.4;
 }
+.gw-pagination-prevbutton-text, .gw-pagination-nextbutton-text, 
+.gw-pagination-prevbutton-text, .gw-pagination-nextbutton-text  {
+  display: flex;
+  align-items: center;
+}
+
 .gw-pagination-prevbutton-text, .gw-pagination-nextbutton-text {
-  font-size: 14px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 .gw-pagination-showcontent {
   margin: 0 10px;
-  font-size: 14px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
   text-align: center;
 }
 .gw-pagination-pagebuttons {
   margin: 0 10px;
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
 }
 .gw-pagination-pagebutton.active {
   font-weight: 700;
-  width: 25px;
-  height: 25px;
+  width: 28px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* -------------------------------- textType, iconType -------------------------------- */
+.gw-pagination-textType--success .gw-pagination-prevbutton-text,
+.gw-pagination-textType--success .gw-pagination-nextbutton-text,
+.gw-pagination-textType--success .gw-pagination-showcontent,
+.gw-pagination-iconType--success .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--success .gw-pagination-nextbutton-icon {
+  color: #7cbb3f;
+}
+.gw-pagination-textType--success-dark .gw-pagination-prevbutton-text,
+.gw-pagination-textType--success-dark .gw-pagination-nextbutton-text,
+.gw-pagination-textType--success-dark .gw-pagination-showcontent,
+.gw-pagination-iconType--success-dark .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--success-dark .gw-pagination-nextbutton-icon {
+  color: #009780;
+}
+.gw-pagination-textType--warning .gw-pagination-prevbutton-text,
+.gw-pagination-textType--warning .gw-pagination-nextbutton-text,
+.gw-pagination-textType--warning .gw-pagination-showcontent,
+.gw-pagination-iconType--warning .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--warning .gw-pagination-nextbutton-icon {
+  color: #ff8e0d;
+}
+.gw-pagination-textType--warning-dark .gw-pagination-prevbutton-text,
+.gw-pagination-textType--warning-dark .gw-pagination-nextbutton-text,
+.gw-pagination-textType--warning-dark .gw-pagination-showcontent,
+.gw-pagination-iconType--warning-dark .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--warning-dark .gw-pagination-nextbutton-icon {
+  color: #ad580e;
+}
+.gw-pagination-textType--danger .gw-pagination-prevbutton-text,
+.gw-pagination-textType--danger .gw-pagination-nextbutton-text,
+.gw-pagination-textType--danger .gw-pagination-showcontent,
+.gw-pagination-iconType--danger .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--danger .gw-pagination-nextbutton-icon {
+  color: #FF2869;
+}
+.gw-pagination-textType--danger-dark .gw-pagination-prevbutton-text,
+.gw-pagination-textType--danger-dark .gw-pagination-nextbutton-text,
+.gw-pagination-textType--danger-dark .gw-pagination-showcontent,
+.gw-pagination-iconType--danger-dark .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--danger-dark .gw-pagination-nextbutton-icon {
+  color: #ff3232;
+}
+.gw-pagination-textType--info .gw-pagination-prevbutton-text,
+.gw-pagination-textType--info .gw-pagination-nextbutton-text,
+.gw-pagination-textType--info .gw-pagination-showcontent,
+.gw-pagination-iconType--info .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--info .gw-pagination-nextbutton-icon {
+  color: #2563eb;
+}
+.gw-pagination-textType--info-dark .gw-pagination-prevbutton-text,
+.gw-pagination-textType--info-dark .gw-pagination-nextbutton-text,
+.gw-pagination-textType--info-dark .gw-pagination-showcontent,
+.gw-pagination-iconType--info-dark .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--info-dark .gw-pagination-nextbutton-icon {
+  color: #0D47A1;
+}
+.gw-pagination-textType--gray .gw-pagination-prevbutton-text,
+.gw-pagination-textType--gray .gw-pagination-nextbutton-text,
+.gw-pagination-textType--gray .gw-pagination-showcontent,
+.gw-pagination-iconType--gray .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--gray .gw-pagination-nextbutton-icon {
+  color: lightgray;
+}
+.gw-pagination-textType--gray-dark .gw-pagination-prevbutton-text,
+.gw-pagination-textType--gray-dark .gw-pagination-nextbutton-text,
+.gw-pagination-textType--gray-dark .gw-pagination-showcontent,
+.gw-pagination-iconType--gray-dark .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--gray-dark .gw-pagination-nextbutton-icon {
+  color: #696A6B;
+}
+.gw-pagination-textType--black .gw-pagination-prevbutton-text,
+.gw-pagination-textType--black .gw-pagination-nextbutton-text,
+.gw-pagination-textType--black .gw-pagination-showcontent,
+.gw-pagination-iconType--black .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--black .gw-pagination-nextbutton-icon {
+  color: black;  
+}
+.gw-pagination-textType--white .gw-pagination-prevbutton-text,
+.gw-pagination-textType--white .gw-pagination-nextbutton-text,
+.gw-pagination-textType--white .gw-pagination-showcontent,
+.gw-pagination-iconType--white .gw-pagination-prevbutton-icon, 
+.gw-pagination-iconType--white .gw-pagination-nextbutton-icon {
+  color: white;  
+}
+
 /* -------------------------------- type -------------------------------- */
 .gw-pagination-type--success .gw-pagination-pagebutton.active {
-  background-color: rgba(5, 150, 105, 0.1);
-  color: rgba(5, 150, 105, 0.1);
+  background-color: #7cbb3f;
+  color: #7cbb3f;
 }
 .gw-pagination-type--success-dark .gw-pagination-pagebutton.active {
   background-color: #009780;
   color: #009780;
 }
 .gw-pagination-type--warning .gw-pagination-pagebutton.active {
-  background-color: rgba(217, 119, 6, 0.1);
-  color: rgba(217, 119, 6, 0.1);
+  background-color: #ff8e0d;
+  color: #ff8e0d;
 }
 .gw-pagination-type--warning-dark .gw-pagination-pagebutton.active {
-  background-color: #ffa04e;
-  color: #ffa04e;
+  background-color: #ad580e;
+  color: #ad580e;
 }
 .gw-pagination-type--danger .gw-pagination-pagebutton.active {
-  background-color: rgba(220, 38, 38, 0.1);
-  color: rgba(220, 38, 38, 0.1);
-}
-.gw-pagination-type--danger-dark .gw-pagination-pagebutton.active {
   background-color: #FF2869;
   color: #FF2869;
 }
+.gw-pagination-type--danger-dark .gw-pagination-pagebutton.active {
+  background-color: #ff3232;
+  color: #ff3232;
+}
 .gw-pagination-type--info .gw-pagination-pagebutton.active {
-  background-color: rgba(37, 99, 235, 0.1);
-  color: rgba(37, 99, 235, 0.1);
+  background-color: #2563eb;
+  color: #2563eb;
 }
 .gw-pagination-type--info-dark .gw-pagination-pagebutton.active {
   background-color: #0D47A1;
   color: #0D47A1;
 }
-.gw-pagination-type--neutral-dark .gw-pagination-pagebutton.active {
-  background-color: #000;
-  color: #000;
+.gw-pagination-type--gray .gw-pagination-pagebutton.active {  
+  background-color: lightgray;
+  color: lightgray;
+}
+.gw-pagination-type--gray-dark .gw-pagination-pagebutton.active { 
+  background-color: #696A6B;
+  color: #696A6B;
+}
+.gw-pagination-type--black .gw-pagination-pagebutton.active {
+  background-color: black;
+  color: black;  
+}
+.gw-pagination-type--white .gw-pagination-pagebutton.active {
+  background-color: white;
+  color: white;
 }
 
 /* -------------------------------- weight -------------------------------- */
