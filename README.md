@@ -177,9 +177,10 @@ function Example() {
   return (
     <div>
       <GLabel
-        color="primary"
+        type="success"
         weight="inline"
-        size="smaller"
+        fontSize="16px"
+        padding="14px 22px"
         shape="circle"
         value="Label"
       />
@@ -199,11 +200,12 @@ function Example() {
   return (
     <div>
       <GButton
-        color="primary"
+        types="danger-dark"
         weight="outlined"
-        size="medium"
-        shape="circle"
-        label="Click me!"
+        fontSize="14px"
+        padding="11px 18px"
+        shape="square"
+        label="Button"
         disabled={false}
         onClick={() => {}}
       />
