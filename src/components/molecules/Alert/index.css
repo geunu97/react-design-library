@@ -17,35 +17,35 @@
 }
 .gw-alert-contentWrap {
   flex: 1;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  min-width: 300px;
-  min-height: 130px;
 }
 .gw-alert-title {
-  color: #000;
   font-weight: 600;
-  margin-bottom: 15px;  
+  display: flex;
+  justify-content: start;
 }
 .gw-alert-content {
-  color: #000;
-  margin-bottom: 10px;    
+  flex: 1;
+  display: flex;
+  justify-content: end;
 }
 .gw-alert-buttonWrap {
   display: flex;
   align-items: center;
 }
 .gw-alert-buttonWrap > button {
-  padding: 10px 20px;
   border: none;
   cursor: pointer;
   flex: 1;
   font-weight: 500;
-  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .gw-alert-confirm-button {
   color: #FFF;
@@ -67,20 +67,20 @@
 
 /* -------------------------------- position -------------------------------- */
 .gw-alert-position--left-top {
-  left: 0;
-  top: 0;
+  left: 30px;
+  top: 30px;
 }
 .gw-alert-position--left-center {
-  left: 0;
+  left: 30px;
   top: 50%;  
   transform: translateY(-50%);
 }
 .gw-alert-position--left-bottom {
-  left: 0;
-  bottom: 0;  
+  left: 30px;
+  bottom: 30px;  
 }
 .gw-alert-position--center-top {
-  top: 0;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -90,57 +90,71 @@
   transform: translate(-50%, -50%);
 }
 .gw-alert-position--center-bottom {
-  bottom: 0;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
 }
 .gw-alert-position--right-top {
-  right: 0;
-  top: 0;  
+  right: 30px;
+  top: 30px;  
 }
 .gw-alert-position--right-center {
-  right: 0;
+  right: 30px;
   top: 50%;  
   transform: translateY(-50%);
 }
 .gw-alert-position--right-bottom {
-  right: 0;
-  bottom: 0;  
+  right: 30px;
+  bottom: 30px;  
 }
 
 /* -------------------------------- type -------------------------------- */
 .gw-alert-type--success .gw-alert-confirm-button {
-  background-color: rgba(5, 150, 105, 0.1);
+  background-color: rgba(5, 150, 105, 0.2);
   color: rgba(5, 150, 105, 1);
 }
 .gw-alert-type--success-dark .gw-alert-confirm-button {
-  background-color: #009780;
+  background-color: rgba(16, 185, 129, 1);
+  color: #fff;
 }
 .gw-alert-type--warning .gw-alert-confirm-button {
-  background-color: rgba(217, 119, 6, 0.1);
-  color: rgb(255, 165, 62);
+  background-color: rgba(217, 119, 6, 0.2);
+  color: rgba(217, 119, 6, 1);
 }
 .gw-alert-type--warning-dark .gw-alert-confirm-button {
-  background-color: #ffa04e;
+  background-color: rgba(245, 158, 11, 1);
+  color: #fff;
 }
 .gw-alert-type--danger .gw-alert-confirm-button {
-  background-color: rgba(220, 38, 38, 0.1);
+  background-color: rgba(220, 38, 38, 0.2);
   color: rgba(220, 38, 38, 1);
 }
 .gw-alert-type--danger-dark .gw-alert-confirm-button {
   background-color: #FF2869;
+  color: #fff;
 }
 .gw-alert-type--info .gw-alert-confirm-button {
-  background-color: rgba(37, 99, 235, 0.1);
+  background-color: rgba(37, 99, 235, 0.2);
   color: rgba(37, 99, 235, 1);
 }
 .gw-alert-type--info-dark .gw-alert-confirm-button {
-  background-color: #0D47A1;
+  background-color: rgba(59, 130, 246, 1);
+  color: #fff;
 }
-.gw-alert-type--neutral .gw-alert-confirm-button {
-  background-color: rgba(145, 145, 145, 0.1);
+.gw-alert-type--gray .gw-alert-confirm-button {
+  background-color: rgba(145, 145, 145, 0.2);
   color: rgba(145, 145, 145, 1);
 }
-.gw-alert-type--neutral-dark .gw-alert-confirm-button {
-  background-color: #000;
+.gw-alert-type--gray-dark .gw-alert-confirm-button {
+  background-color: rgba(170, 170, 170, 1);
+  color: #fff;
+}
+.gw-alert-type--black .gw-alert-confirm-button {
+  background-color: black;
+  color: #fff;
+}
+.gw-alert-type--white .gw-alert-confirm-button {
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }

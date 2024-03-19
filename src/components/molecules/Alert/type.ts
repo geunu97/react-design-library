@@ -8,8 +8,10 @@ export interface AlertOptions {
     | 'danger-dark'
     | 'info'
     | 'info-dark'
-    | 'neutral'
-    | 'neutral-dark';
+    | 'gray'
+    | 'gray-dark'
+    | 'black'
+    | 'white';
   position?:
     | 'left-top'
     | 'left-center'
@@ -20,17 +22,22 @@ export interface AlertOptions {
     | 'right-top'
     | 'right-center'
     | 'right-bottom';
-  className?: string;
+  title?: string;
+  content?: string;
+  confirmButtonText?: string;
+  cancelButtonText?: string;
   width?: string;
   height?: string;
-  title?: string;
+  buttonHeight?: string;
   titleSize?: string;
-  content?: string;
   contentSize?: string;
-  confirmButtonText?: string;
-  showCancelButton?: boolean;
-  cancelButtonText?: string;
   buttonTextSize?: string;
+  titleAlignment?: 'start' | 'center' | 'end';
+  contentAlignment?: 'start' | 'center' | 'end';
+  titleVerticalAlignment?: 'start' | 'center' | 'end';
+  contentVerticalAlignment?: 'start' | 'center' | 'end';
+  showCancelButton?: boolean;
+  className?: string;
   onConfirm?: () => void;
 }
 

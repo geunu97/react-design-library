@@ -22,7 +22,7 @@ export const SuccessType: Story = {
   },
 };
 export const SuccessDarkType: Story = {
-  name: 'Type: SuccessDark',
+  name: 'Type: Success Dark',
   args: {
     ...sampleArgs,
     type: 'success-dark',
@@ -36,7 +36,7 @@ export const WarningType: Story = {
   },
 };
 export const WarningDarkType: Story = {
-  name: 'Type: WarningDark',
+  name: 'Type: Warning Dark',
   args: {
     ...sampleArgs,
     type: 'warning-dark',
@@ -50,7 +50,7 @@ export const DangerType: Story = {
   },
 };
 export const DangerDarkType: Story = {
-  name: 'Type: DangerDark',
+  name: 'Type: Danger Dark',
   args: {
     ...sampleArgs,
     type: 'danger-dark',
@@ -64,24 +64,44 @@ export const InfoType: Story = {
   },
 };
 export const InfoDarkType: Story = {
-  name: 'Type: InfoDark',
+  name: 'Type: Info Dark',
   args: {
     ...sampleArgs,
     type: 'info-dark',
   },
 };
-export const NeutralType: Story = {
-  name: 'Type: Neutral',
+export const GrayType: Story = {
+  name: 'Type: Gray',
   args: {
     ...sampleArgs,
-    type: 'neutral',
+    type: 'gray',
   },
 };
-export const NeutralDarkType: Story = {
-  name: 'Type: NeutralDark',
+export const GrayDarkType: Story = {
+  name: 'Type: Gray Dark',
   args: {
     ...sampleArgs,
-    type: 'neutral-dark',
+    type: 'gray-dark',
+  },
+};
+export const BlackType: Story = {
+  name: 'Type: Black',
+  args: {
+    ...sampleArgs,
+    type: 'black',
+  },
+};
+export const WhiteType: Story = {
+  name: 'Type: White',
+  args: {
+    ...sampleArgs,
+    type: 'white',
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dark',
+      values: [{ name: 'dark', value: '#000000' }],
+    },
   },
 };
 
@@ -150,15 +170,6 @@ export const RightBottomPosition: Story = {
   },
 };
 
-/* -------------------------------- ShowCancelButton -------------------------------- */
-export const ShowCancelButton: Story = {
-  name: 'ShowCancelButton: true',
-  args: {
-    ...sampleArgs,
-    showCancelButton: true,
-  },
-};
-
 /* -------------------------------- Title -------------------------------- */
 export const Title: Story = {
   name: 'Title: string',
@@ -196,6 +207,33 @@ export const CancelButtonText: Story = {
   },
 };
 
+/* -------------------------------- Width -------------------------------- */
+export const Width: Story = {
+  name: 'Width: string',
+  args: {
+    ...sampleArgs,
+    width: '600px',
+  },
+};
+
+/* -------------------------------- Height -------------------------------- */
+export const Height: Story = {
+  name: 'Height: string',
+  args: {
+    ...sampleArgs,
+    height: '600px',
+  },
+};
+
+/* -------------------------------- ButtonHeight -------------------------------- */
+export const ButtonHeight: Story = {
+  name: 'ButtonHeight: string',
+  args: {
+    ...sampleArgs,
+    buttonHeight: '40px',
+  },
+};
+
 /* -------------------------------- TitleSize -------------------------------- */
 export const TitleSize: Story = {
   name: 'TitleSize: string',
@@ -224,11 +262,39 @@ export const ButtonTextSize: Story = {
   },
 };
 
-/* -------------------------------- Width -------------------------------- */
-export const Width: Story = {
-  name: 'Width: string',
+/* -------------------------------- TitleAlignment -------------------------------- */
+export const TitleAlignment: Story = {
+  name: 'TitleAlignment: string',
   args: {
     ...sampleArgs,
-    width: '600px',
+    title: 'This is a sample title',
+    titleAlignment: 'start',
+  },
+};
+
+/* -------------------------------- ContentAlignment -------------------------------- */
+export const ContentAlignment: Story = {
+  name: 'ContentAlignment: string',
+  args: {
+    ...sampleArgs,
+    contentAlignment: 'start',
+  },
+};
+
+/* -------------------------------- contentVerticalAlignment -------------------------------- */
+export const ContentVerticalAlignment: Story = {
+  name: 'ContentVerticalAlignment: string',
+  args: {
+    ...sampleArgs,
+    contentVerticalAlignment: 'start',
+  },
+};
+
+/* -------------------------------- ShowCancelButton -------------------------------- */
+export const ShowCancelButton: Story = {
+  name: 'ShowCancelButton: boolean',
+  args: {
+    ...sampleArgs,
+    showCancelButton: true,
   },
 };

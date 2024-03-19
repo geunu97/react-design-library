@@ -5,47 +5,60 @@ import './index.css';
 const Alert = ({
   type = 'info-dark',
   position = 'center-center',
-  className,
-  width = 'auto',
-  height = 'auto',
   title = '',
-  titleSize = '20px',
   content = '',
-  contentSize = '16px',
   confirmButtonText = '확인',
-  showCancelButton = false,
   cancelButtonText = '취소',
-  buttonTextSize = '16px',
+  width = '300px',
+  height = '200px',
+  buttonHeight = '60px',
+  titleSize = '20px',
+  contentSize = '16px',
+  buttonTextSize = '18px',
+  titleAlignment = 'center',
+  contentAlignment = 'center',
+  titleVerticalAlignment = 'center',
+  contentVerticalAlignment = 'center',
+  showCancelButton = false,
+  className,
   onConfirm,
   onClose,
 }: AlertProps) => {
   const wrapperStyle = { width, height };
-  const titleStyle = { fontSize: titleSize };
-  const contentStyle = { fontSize: contentSize };
+  const titleStyle = {
+    fontSize: titleSize,
+    justifyContent: titleAlignment,
+    alignItems: titleVerticalAlignment,
+  };
+  const contentStyle = {
+    fontSize: contentSize,
+    justifyContent: contentAlignment,
+    alignItems: contentVerticalAlignment,
+  };
   const confirmButtonStyle = {
+    height: buttonHeight,
     borderRadius: showCancelButton ? '0px 0px 0px 10px' : '0px 0px 10px 10px',
     fontSize: buttonTextSize,
   };
-  const cancelButtonStyle = { borderRadius: '0px 0px 10px 0px', fontSize: buttonTextSize };
+  const cancelButtonStyle = { height: buttonHeight, borderRadius: '0px 0px 10px 0px', fontSize: buttonTextSize };
 
   return (
     <div className="gw-alert-container">
       <div
-        className={[
-          'gw-alert',
-          `gw-alert-position--${position}`,
-          `gw-alert-type--${type}`,
-          `${className ? className : ''}`,
-        ].join(' ')}
+        className={`gw-alert gw-alert-position--${position} gw-alert-type--${type} ${className ? className : ''}`}
         style={wrapperStyle}
       >
         <div className="gw-alert-contentWrap">
-          <div className="gw-alert-title" style={titleStyle}>
-            {title}
-          </div>
-          <div className="gw-alert-content" style={contentStyle}>
-            {content}
-          </div>
+          {title && (
+            <div className="gw-alert-title" style={titleStyle}>
+              {title}
+            </div>
+          )}
+          {content && (
+            <div className="gw-alert-content" style={contentStyle}>
+              {content}
+            </div>
+          )}
         </div>
         <div className="gw-alert-buttonWrap">
           <button
