@@ -158,8 +158,10 @@ function Example() {
       <GProgressBar
         steps={60}
         type="success-dark"
-        stroke="2px"
+        secondaryType="gray"
         shape="circle"
+        width="100%"
+        stroke="2px"        
       />
     </div>
   );
