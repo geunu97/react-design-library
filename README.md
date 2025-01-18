@@ -1,6 +1,6 @@
 <div align="center">
 
-# Geunwoo/React Design System
+# Geunwoo/React Design Library
 
 [![npm version](https://img.shields.io/npm/v/@geunwoo/react-design-system.svg?style=flat-square)](https://www.npmjs.com/package/@geunwoo/react-design-system)
 [![npm downloads](https://img.shields.io/npm/dm/@geunwoo/react-design-system.svg?style=flat-square)](https://npm-stat.com/charts.html?package=@geunwoo/react-design-system)
